@@ -4,10 +4,10 @@ import (
 	gocontext "context"
 	"fmt"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/query"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func (suite *IntegrationTestSuite) TestGRPCQueryValidators() {

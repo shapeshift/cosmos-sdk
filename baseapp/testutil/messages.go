@@ -1,11 +1,11 @@
 package testutil
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/codec"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/types/msgservice"
 )
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

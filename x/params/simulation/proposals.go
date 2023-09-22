@@ -1,8 +1,8 @@
 package simulation
 
 import (
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/simulation"
 )
 
 const (

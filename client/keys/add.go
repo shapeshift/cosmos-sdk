@@ -12,14 +12,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/client/input"
+	"github.com/shapeshift/cosmos-sdk/crypto/hd"
+	"github.com/shapeshift/cosmos-sdk/crypto/keyring"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 const (

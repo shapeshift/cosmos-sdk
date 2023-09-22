@@ -8,11 +8,11 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/server"
+	"github.com/shapeshift/cosmos-sdk/x/genutil"
+	"github.com/shapeshift/cosmos-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

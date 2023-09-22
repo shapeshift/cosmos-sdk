@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	grpc "google.golang.org/grpc"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 // iterCount defines the number of iterations to run on each query to test

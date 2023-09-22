@@ -1,10 +1,10 @@
 package v3
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 func mapAccountAddressToAccountID(ctx sdk.Context, storeKey storetypes.StoreKey, cdc codec.BinaryCodec) error {

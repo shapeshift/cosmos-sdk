@@ -3,7 +3,7 @@ package keeper_test
 import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtypes "github.com/cometbft/cometbft/types"
-	"github.com/cosmos/cosmos-sdk/x/consensus/types"
+	"github.com/shapeshift/cosmos-sdk/x/consensus/types"
 )
 
 func (s *KeeperTestSuite) TestUpdateParams() {

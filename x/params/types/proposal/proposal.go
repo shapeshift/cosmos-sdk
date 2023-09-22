@@ -6,7 +6,7 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	govtypes "github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 const (

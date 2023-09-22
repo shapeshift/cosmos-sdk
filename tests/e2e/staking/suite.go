@@ -13,18 +13,18 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/crypto/hd"
+	"github.com/shapeshift/cosmos-sdk/crypto/keyring"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	clitestutil "github.com/shapeshift/cosmos-sdk/testutil/cli"
+	"github.com/shapeshift/cosmos-sdk/testutil/network"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/types/query"
+	"github.com/shapeshift/cosmos-sdk/x/staking/client/cli"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 type E2ETestSuite struct {
@@ -1435,7 +1435,7 @@ func (s *E2ETestSuite) TestNewCancelUnbondingDelegationCmd() {
 
 // TestBlockResults tests that the validator updates correctly show when
 // calling the /block_results RPC endpoint.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7401.
+// ref: https://github.com/shapeshift/cosmos-sdk/issues/7401.
 func (s *E2ETestSuite) TestBlockResults() {
 	require := s.Require()
 	val := s.network.Validators[0]
@@ -1501,7 +1501,7 @@ func (s *E2ETestSuite) TestBlockResults() {
 	}, 10)
 }
 
-// https://github.com/cosmos/cosmos-sdk/issues/10660
+// https://github.com/shapeshift/cosmos-sdk/issues/10660
 func (s *E2ETestSuite) TestEditValidatorMoniker() {
 	val := s.network.Validators[0]
 	require := s.Require()

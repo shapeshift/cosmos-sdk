@@ -3,10 +3,10 @@ package tx
 import (
 	"fmt"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
 )
 
 // MaxGasWanted defines the max gas allowed.

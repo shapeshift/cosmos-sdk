@@ -7,10 +7,10 @@ import (
 
 	"github.com/cometbft/cometbft/libs/log"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	mempool "github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	mempool "github.com/shapeshift/cosmos-sdk/types/mempool"
+	"github.com/shapeshift/cosmos-sdk/x/auth/signing"
 	"github.com/stretchr/testify/require"
 )
 

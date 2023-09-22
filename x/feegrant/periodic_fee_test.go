@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/feegrant"
 )
 
 func TestPeriodicFeeValidAllow(t *testing.T) {

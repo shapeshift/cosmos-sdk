@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/math"
 	"sigs.k8s.io/yaml"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 // NewCommissionRates returns an initialized validator commission rates.

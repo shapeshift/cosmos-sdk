@@ -8,7 +8,7 @@ import (
 
 	crgerrs "cosmossdk.io/tools/rosetta/lib/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 // ---------- cosmos-rosetta-gateway.types.NetworkInformationProvider implementation ------------ //

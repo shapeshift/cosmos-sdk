@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
-	"github.com/cosmos/cosmos-sdk/x/feegrant/module"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/x/feegrant"
+	"github.com/shapeshift/cosmos-sdk/x/feegrant/module"
 )
 
 func TestFilteredFeeValidAllow(t *testing.T) {

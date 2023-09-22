@@ -12,20 +12,20 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	baseapptestutil "github.com/cosmos/cosmos-sdk/baseapp/testutil"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	baseapptestutil "github.com/shapeshift/cosmos-sdk/baseapp/testutil"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/snapshots"
+	snapshottypes "github.com/shapeshift/cosmos-sdk/snapshots/types"
+	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
+	"github.com/shapeshift/cosmos-sdk/store/rootmulti"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	authtx "github.com/shapeshift/cosmos-sdk/x/auth/tx"
 )
 
 var (
@@ -537,8 +537,8 @@ func TestBaseAppAnteHandler(t *testing.T) {
 
 // Test and ensure that invalid block heights always cause errors.
 // See issues:
-// - https://github.com/cosmos/cosmos-sdk/issues/11220
-// - https://github.com/cosmos/cosmos-sdk/issues/7662
+// - https://github.com/shapeshift/cosmos-sdk/issues/11220
+// - https://github.com/shapeshift/cosmos-sdk/issues/7662
 func TestABCI_CreateQueryContext(t *testing.T) {
 	t.Parallel()
 

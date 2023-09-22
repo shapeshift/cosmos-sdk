@@ -10,14 +10,14 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/hd"
+	"github.com/shapeshift/cosmos-sdk/crypto/keyring"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	"github.com/shapeshift/cosmos-sdk/types/module/testutil"
 )
 
 func TestMain(m *testing.M) {

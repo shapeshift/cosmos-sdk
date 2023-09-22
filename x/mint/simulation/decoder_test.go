@@ -7,11 +7,11 @@ import (
 	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/mint/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/mint"
+	"github.com/shapeshift/cosmos-sdk/x/mint/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/mint/types"
 )
 
 func TestDecodeStore(t *testing.T) {

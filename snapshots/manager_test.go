@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/snapshots"
-	"github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/shapeshift/cosmos-sdk/snapshots"
+	"github.com/shapeshift/cosmos-sdk/snapshots/types"
+	"github.com/shapeshift/cosmos-sdk/testutil"
 )
 
 var opts = types.NewSnapshotOptions(1500, 2)

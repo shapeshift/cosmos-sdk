@@ -5,11 +5,11 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/shapeshift/cosmos-sdk/telemetry"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/x/bank/types"
+	govtypes "github.com/shapeshift/cosmos-sdk/x/gov/types"
 )
 
 type msgServer struct {

@@ -10,11 +10,11 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/server"
+	servertypes "github.com/shapeshift/cosmos-sdk/server/types"
+	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
+	"github.com/shapeshift/cosmos-sdk/store/rootmulti"
 )
 
 const FlagAppDBBackend = "app-db-backend"
@@ -57,7 +57,7 @@ Supported app-db-backend types include 'goleveldb', 'rocksdb', 'pebbledb'.`,
 			// use the first argument if present to set the pruning method
 			if len(args) > 0 {
 				vp.Set(server.FlagPruning, args[0])
-			} else if vp.GetString(server.FlagPruning) == "" { // this differs from orignal https://github.com/cosmos/cosmos-sdk/pull/16856 for compatibility
+			} else if vp.GetString(server.FlagPruning) == "" { // this differs from orignal https://github.com/shapeshift/cosmos-sdk/pull/16856 for compatibility
 				vp.Set(server.FlagPruning, pruningtypes.PruningOptionDefault)
 			}
 			pruningOptions, err := server.GetPruningOptionsFromFlags(vp)

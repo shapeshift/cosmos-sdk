@@ -10,9 +10,9 @@ import (
 	"github.com/cometbft/cometbft/crypto/tmhash"
 	"github.com/hdevalence/ed25519consensus"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/types/errors"
 )
 
 //-------------------------------------

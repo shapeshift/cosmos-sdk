@@ -3,12 +3,12 @@ package crisis
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/crisis/client/cli"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	clitestutil "github.com/shapeshift/cosmos-sdk/testutil/cli"
+	"github.com/shapeshift/cosmos-sdk/testutil/network"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/crisis/client/cli"
 	"github.com/stretchr/testify/suite"
 )
 

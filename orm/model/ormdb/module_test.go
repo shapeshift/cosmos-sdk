@@ -12,18 +12,18 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/cosmos/cosmos-sdk/orm/testing/ormmocks"
+	"github.com/shapeshift/cosmos-sdk/orm/testing/ormmocks"
 
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/testkv"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testpb"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormdb"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormtable"
-	"github.com/cosmos/cosmos-sdk/orm/testing/ormtest"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormjson"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testkv"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testpb"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormdb"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormtable"
+	"github.com/shapeshift/cosmos-sdk/orm/testing/ormtest"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormjson"
 )
 
 // These tests use a simulated bank keeper. Addresses and balances use

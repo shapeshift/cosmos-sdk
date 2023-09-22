@@ -16,12 +16,12 @@ This ADR provides guidelines and recommended practices when updating Protobuf de
 
 ## Context
 
-The Cosmos SDK maintains a set of [Protobuf definitions](https://github.com/cosmos/cosmos-sdk/tree/main/proto/cosmos). It is important to correctly design Protobuf definitions to avoid any breaking changes within the same version. The reasons are to not break tooling (including indexers and explorers), wallets and other third-party integrations.
+The Cosmos SDK maintains a set of [Protobuf definitions](https://github.com/shapeshift/cosmos-sdk/tree/main/proto/cosmos). It is important to correctly design Protobuf definitions to avoid any breaking changes within the same version. The reasons are to not break tooling (including indexers and explorers), wallets and other third-party integrations.
 
 When making changes to these Protobuf definitions, the Cosmos SDK currently only follows [Buf's](https://docs.buf.build/) recommendations. We noticed however that Buf's recommendations might still result in breaking changes in the SDK in some cases. For example:
 
 * Adding fields to `Msg`s. Adding fields is a not a Protobuf spec-breaking operation. However, when adding new fields to `Msg`s, the unknown field rejection will throw an error when sending the new `Msg` to an older node.
-* Marking fields as `reserved`. Protobuf proposes the `reserved` keyword for removing fields without the need to bump the package version. However, by doing so, client backwards compatibility is broken as Protobuf doesn't generate anything for `reserved` fields. See [#9446](https://github.com/cosmos/cosmos-sdk/issues/9446) for more details on this issue.
+* Marking fields as `reserved`. Protobuf proposes the `reserved` keyword for removing fields without the need to bump the package version. However, by doing so, client backwards compatibility is broken as Protobuf doesn't generate anything for `reserved` fields. See [#9446](https://github.com/shapeshift/cosmos-sdk/issues/9446) for more details on this issue.
 
 Moreover, module developers often face other questions around Protobuf definitions such as "Can I rename a field?" or "Can I deprecate a field?" This ADR aims to answer all these questions by providing clear guidelines about allowed updates for Protobuf definitions.
 
@@ -77,7 +77,7 @@ Protobuf supports the [`deprecated` field option](https://developers.google.com/
 
 As an example, the Cosmos SDK v0.42 to v0.43 update contained two Protobuf-breaking changes, listed below. Instead of bumping the package versions from `v1beta1` to `v1`, the SDK team decided to follow this guideline, by reverting the breaking changes, marking those changes as deprecated, and modifying the node implementation when processing messages with deprecated fields. More specifically:
 
-* The Cosmos SDK recently removed support for [time-based software upgrades](https://github.com/cosmos/cosmos-sdk/pull/8849). As such, the `time` field has been marked as deprecated in `cosmos.upgrade.v1beta1.Plan`. Moreover, the node will reject any proposal containing an upgrade Plan whose `time` field is non-empty.
+* The Cosmos SDK recently removed support for [time-based software upgrades](https://github.com/shapeshift/cosmos-sdk/pull/8849). As such, the `time` field has been marked as deprecated in `cosmos.upgrade.v1beta1.Plan`. Moreover, the node will reject any proposal containing an upgrade Plan whose `time` field is non-empty.
 * The Cosmos SDK now supports [governance split votes](./adr-037-gov-split-vote.md). When querying for votes, the returned `cosmos.gov.v1beta1.Vote` message has its `option` field (used for 1 vote option) deprecated in favor of its `options` field (allowing multiple vote options). Whenever possible, the SDK still populates the deprecated `option` field, that is, if and only if the `len(options) == 1` and `options[0].Weight == 1.0`.
 
 #### 3. Fields MUST NOT be renamed
@@ -125,5 +125,5 @@ Test cases for an implementation are mandatory for ADRs that are affecting conse
 
 ## References
 
-* [#9445](https://github.com/cosmos/cosmos-sdk/issues/9445) Release proto definitions v1
-* [#9446](https://github.com/cosmos/cosmos-sdk/issues/9446) Address v1beta1 proto breaking changes
+* [#9445](https://github.com/shapeshift/cosmos-sdk/issues/9445) Release proto definitions v1
+* [#9446](https://github.com/shapeshift/cosmos-sdk/issues/9446) Address v1beta1 proto breaking changes

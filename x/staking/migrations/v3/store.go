@@ -1,12 +1,12 @@
 package v3
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/exported"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	paramtypes "github.com/shapeshift/cosmos-sdk/x/params/types"
+	"github.com/shapeshift/cosmos-sdk/x/staking/exported"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 // subspace contains the method needed for migrations of the

@@ -4,11 +4,11 @@ import (
 	"math/rand"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/address"
+	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/types"
 )
 
 // Simulation operation weights constants

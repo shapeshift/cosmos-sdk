@@ -5,18 +5,18 @@ import (
 	"time"
 
 	"cosmossdk.io/math"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	govtypes "github.com/shapeshift/cosmos-sdk/x/gov/types"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	cryptocodec "github.com/shapeshift/cosmos-sdk/crypto/codec"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 var (

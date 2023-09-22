@@ -8,14 +8,14 @@ import (
 	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v1"
-	v2 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v2"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	v1 "github.com/shapeshift/cosmos-sdk/x/gov/migrations/v1"
+	v2 "github.com/shapeshift/cosmos-sdk/x/gov/migrations/v2"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func TestMigrateStore(t *testing.T) {

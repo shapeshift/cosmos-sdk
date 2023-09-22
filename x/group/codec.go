@@ -1,14 +1,14 @@
 package group
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	authzcodec "github.com/cosmos/cosmos-sdk/x/authz/codec"
-	govcodec "github.com/cosmos/cosmos-sdk/x/gov/codec"
-	groupcodec "github.com/cosmos/cosmos-sdk/x/group/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/codec/legacy"
+	cdctypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/msgservice"
+	authzcodec "github.com/shapeshift/cosmos-sdk/x/authz/codec"
+	govcodec "github.com/shapeshift/cosmos-sdk/x/gov/codec"
+	groupcodec "github.com/shapeshift/cosmos-sdk/x/group/codec"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary group module concrete

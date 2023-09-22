@@ -3,9 +3,9 @@ package posthandler
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/tx"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 // ValidateBasicDecorator will call tx.ValidateBasic and return any non-nil error.

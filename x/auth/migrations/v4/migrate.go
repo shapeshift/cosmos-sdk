@@ -1,10 +1,10 @@
 package v4
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/exported"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/auth/exported"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 var ParamsKey = []byte{0x00}

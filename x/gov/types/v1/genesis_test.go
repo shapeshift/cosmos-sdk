@@ -3,8 +3,8 @@ package v1_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
 	"github.com/stretchr/testify/require"
 )
 

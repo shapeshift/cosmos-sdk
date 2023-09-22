@@ -6,10 +6,10 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	protoio "github.com/cosmos/gogoproto/io"
 
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	snapshottypes "github.com/shapeshift/cosmos-sdk/snapshots/types"
+	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 var _ sdk.MultiStore = multiStore{}

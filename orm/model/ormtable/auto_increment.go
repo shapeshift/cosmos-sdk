@@ -9,9 +9,9 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/types/kv"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/shapeshift/cosmos-sdk/orm/types/kv"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 )
 
 // autoIncrementTable is a Table implementation for tables with an

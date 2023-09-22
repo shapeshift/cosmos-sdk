@@ -10,12 +10,12 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/depinject"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/std"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/types/module"
 )
 
 // BaseAppOption is a depinject.AutoGroupType which can be used to pass

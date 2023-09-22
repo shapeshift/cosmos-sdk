@@ -7,10 +7,10 @@ import (
 	context "context"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	types "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/msgservice"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	github_com_cosmos_cosmos_sdk_types "github.com/shapeshift/cosmos-sdk/types"
+	types "github.com/shapeshift/cosmos-sdk/types"
+	_ "github.com/shapeshift/cosmos-sdk/types/msgservice"
+	_ "github.com/shapeshift/cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
@@ -155,7 +155,7 @@ var xxx_messageInfo_MsgWithdrawDelegatorReward proto.InternalMessageInfo
 // response type.
 type MsgWithdrawDelegatorRewardResponse struct {
 	// Since: cosmos-sdk 0.46
-	Amount github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"amount"`
+	Amount github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/shapeshift/cosmos-sdk/types.Coins" json:"amount"`
 }
 
 func (m *MsgWithdrawDelegatorRewardResponse) Reset()         { *m = MsgWithdrawDelegatorRewardResponse{} }
@@ -241,7 +241,7 @@ var xxx_messageInfo_MsgWithdrawValidatorCommission proto.InternalMessageInfo
 // Msg/WithdrawValidatorCommission response type.
 type MsgWithdrawValidatorCommissionResponse struct {
 	// Since: cosmos-sdk 0.46
-	Amount github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"amount"`
+	Amount github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/shapeshift/cosmos-sdk/types.Coins" json:"amount"`
 }
 
 func (m *MsgWithdrawValidatorCommissionResponse) Reset() {
@@ -289,7 +289,7 @@ func (m *MsgWithdrawValidatorCommissionResponse) GetAmount() github_com_cosmos_c
 // MsgFundCommunityPool allows an account to directly
 // fund the community pool.
 type MsgFundCommunityPool struct {
-	Amount    github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"amount"`
+	Amount    github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,1,rep,name=amount,proto3,castrepeated=github.com/shapeshift/cosmos-sdk/types.Coins" json:"amount"`
 	Depositor string                                   `protobuf:"bytes,2,opt,name=depositor,proto3" json:"depositor,omitempty"`
 }
 
@@ -471,7 +471,7 @@ type MsgCommunityPoolSpend struct {
 	// authority is the address that controls the module (defaults to x/gov unless overwritten).
 	Authority string                                   `protobuf:"bytes,1,opt,name=authority,proto3" json:"authority,omitempty"`
 	Recipient string                                   `protobuf:"bytes,2,opt,name=recipient,proto3" json:"recipient,omitempty"`
-	Amount    github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=amount,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coins" json:"amount"`
+	Amount    github_com_cosmos_cosmos_sdk_types.Coins `protobuf:"bytes,3,rep,name=amount,proto3,castrepeated=github.com/shapeshift/cosmos-sdk/types.Coins" json:"amount"`
 }
 
 func (m *MsgCommunityPoolSpend) Reset()         { *m = MsgCommunityPoolSpend{} }

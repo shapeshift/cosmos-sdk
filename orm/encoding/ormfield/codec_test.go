@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormfield"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormfield"
 
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"gotest.tools/v3/assert"
 	"pgregory.net/rapid"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/testutil"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testutil"
 )
 
 func TestCodec(t *testing.T) {

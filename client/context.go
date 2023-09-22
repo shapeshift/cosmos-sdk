@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/keyring"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 // PreprocessTxFn defines a hook by which chains can preprocess transactions before broadcasting
@@ -79,7 +79,7 @@ func (ctx Context) WithKeyringOptions(opts ...keyring.Option) Context {
 func (ctx Context) WithInput(r io.Reader) Context {
 	// convert to a bufio.Reader to have a shared buffer between the keyring and the
 	// the Commands, ensuring a read from one advance the read pointer for the other.
-	// see https://github.com/cosmos/cosmos-sdk/issues/9566.
+	// see https://github.com/shapeshift/cosmos-sdk/issues/9566.
 	ctx.Input = bufio.NewReader(r)
 	return ctx
 }

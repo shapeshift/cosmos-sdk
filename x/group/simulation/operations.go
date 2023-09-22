@@ -7,18 +7,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/group/keeper"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	cdctypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/auth/tx"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/x/group/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/simulation"
 
-	"github.com/cosmos/cosmos-sdk/x/group"
+	"github.com/shapeshift/cosmos-sdk/x/group"
 )
 
 var initialGroupID = uint64(100000000000000)

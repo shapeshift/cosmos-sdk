@@ -8,15 +8,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	"github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/store/prefix"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/params"
+	"github.com/shapeshift/cosmos-sdk/x/params/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/params/types"
+	"github.com/shapeshift/cosmos-sdk/x/params/types/proposal"
 )
 
 type KeeperTestSuite struct {

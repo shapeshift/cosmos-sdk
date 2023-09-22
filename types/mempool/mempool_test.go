@@ -10,15 +10,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/mempool"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
+	txsigning "github.com/shapeshift/cosmos-sdk/types/tx/signing"
+	"github.com/shapeshift/cosmos-sdk/x/auth/signing"
+	"github.com/shapeshift/cosmos-sdk/x/distribution"
+	"github.com/shapeshift/cosmos-sdk/x/gov"
 )
 
 // testPubKey is a dummy implementation of PubKey used for testing.

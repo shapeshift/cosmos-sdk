@@ -2,13 +2,13 @@ package legacytx
 
 import (
 	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/shapeshift/cosmos-sdk/codec/legacy"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/types/tx"
+	"github.com/shapeshift/cosmos-sdk/types/tx/signing"
 )
 
 // Interface implementation checks

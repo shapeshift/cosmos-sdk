@@ -22,7 +22,7 @@ The subset of the genesis state defined from a given module is generally defined
 See an example of `GenesisState` protobuf message definition from the `auth` module:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/auth/v1beta1/genesis.proto
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/auth/v1beta1/genesis.proto
 ```
 
 Next we present the main genesis-related methods that need to be implemented by module developers in order for their module to be used in Cosmos SDK applications.
@@ -32,7 +32,7 @@ Next we present the main genesis-related methods that need to be implemented by 
 The `DefaultGenesis()` method is a simple method that calls the constructor function for `GenesisState` with the default value for each parameter. See an example from the `auth` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/auth/module.go#L55-L59
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/auth/module.go#L55-L59
 ```
 
 ### `ValidateGenesis`
@@ -40,7 +40,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/auth/module.go#L55-L59
 The `ValidateGenesis(data GenesisState)` method is called to verify that the provided `genesisState` is correct. It should perform validity checks on each of the parameters listed in `GenesisState`. See an example from the `auth` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/auth/types/genesis.go#L61-L74
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/auth/types/genesis.go#L61-L74
 ```
 
 ## Other Genesis Methods
@@ -56,7 +56,7 @@ The [module manager](./01-module-manager.md#manager) of the application is respo
 See an example of `InitGenesis` from the `auth` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/auth/keeper/genesis.go#L8-L35
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/auth/keeper/genesis.go#L8-L35
 ```
 
 ### `ExportGenesis`
@@ -66,5 +66,5 @@ The `ExportGenesis` method is executed whenever an export of the state is made. 
 See an example of `ExportGenesis` from the `auth` module.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/auth/keeper/genesis.go#L37-L49
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/auth/keeper/genesis.go#L37-L49
 ```

@@ -9,7 +9,7 @@ This document describes how to upgrade your application. If you are looking spec
 :::
 
 :::warning
-This section is currently incomplete. Track the progress of this document [here](https://github.com/cosmos/cosmos-sdk/issues/11504).
+This section is currently incomplete. Track the progress of this document [here](https://github.com/shapeshift/cosmos-sdk/issues/11504).
 :::
 
 ## Pre-Upgrade Handling

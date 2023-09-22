@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 func TestServiceServer_Config(t *testing.T) {

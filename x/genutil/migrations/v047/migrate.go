@@ -1,18 +1,18 @@
 package v047
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	bankv4 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v4"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	v1distr "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v1"
-	v3distr "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v3"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	v4gov "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	groupv2 "github.com/cosmos/cosmos-sdk/x/group/migrations/v2"
+	"github.com/shapeshift/cosmos-sdk/client"
+	v1auth "github.com/shapeshift/cosmos-sdk/x/auth/migrations/v1"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	bankv4 "github.com/shapeshift/cosmos-sdk/x/bank/migrations/v4"
+	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
+	v1distr "github.com/shapeshift/cosmos-sdk/x/distribution/migrations/v1"
+	v3distr "github.com/shapeshift/cosmos-sdk/x/distribution/migrations/v3"
+	distrtypes "github.com/shapeshift/cosmos-sdk/x/distribution/types"
+	"github.com/shapeshift/cosmos-sdk/x/genutil/types"
+	v4gov "github.com/shapeshift/cosmos-sdk/x/gov/migrations/v4"
+	govv1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
+	groupv2 "github.com/shapeshift/cosmos-sdk/x/group/migrations/v2"
 )
 
 // Migrate migrates exported state from v0.46 to a v0.47 genesis state.

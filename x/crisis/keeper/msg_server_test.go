@@ -6,13 +6,13 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis"
-	"github.com/cosmos/cosmos-sdk/x/crisis/keeper"
-	crisistestutil "github.com/cosmos/cosmos-sdk/x/crisis/testutil"
-	"github.com/cosmos/cosmos-sdk/x/crisis/types"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/crisis"
+	"github.com/shapeshift/cosmos-sdk/x/crisis/keeper"
+	crisistestutil "github.com/shapeshift/cosmos-sdk/x/crisis/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/crisis/types"
 )
 
 type KeeperTestSuite struct {

@@ -1,14 +1,14 @@
 package v2
 
 import (
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	v2distribution "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v2"
-	v1 "github.com/cosmos/cosmos-sdk/x/staking/migrations/v1"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/store/prefix"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/address"
+	v1auth "github.com/shapeshift/cosmos-sdk/x/auth/migrations/v1"
+	v2distribution "github.com/shapeshift/cosmos-sdk/x/distribution/migrations/v2"
+	v1 "github.com/shapeshift/cosmos-sdk/x/staking/migrations/v1"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 // migratePrefixAddressAddressAddress is a helper function that migrates all keys of format:

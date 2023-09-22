@@ -7,15 +7,15 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	authkeeper "github.com/shapeshift/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"
+	banktestutil "github.com/shapeshift/cosmos-sdk/x/bank/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/types"
+	stakingkeeper "github.com/shapeshift/cosmos-sdk/x/staking/keeper"
 )
 
 func TestSetWithdrawAddr(t *testing.T) {

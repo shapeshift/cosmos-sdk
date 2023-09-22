@@ -6,16 +6,16 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/depinject"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/testutil"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/client/tx"
+	clienttx "github.com/shapeshift/cosmos-sdk/client/tx"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	txtypes "github.com/shapeshift/cosmos-sdk/types/tx"
+	"github.com/shapeshift/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/shapeshift/cosmos-sdk/x/auth/signing"
+	"github.com/shapeshift/cosmos-sdk/x/auth/testutil"
 )
 
 var (

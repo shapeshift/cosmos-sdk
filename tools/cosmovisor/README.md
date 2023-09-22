@@ -32,7 +32,7 @@ Cosmovisor is designed to be used as a wrapper for a `Cosmos SDK` app:
 
 *Note: If new versions of the application are not set up to run in-place store migrations, migrations will need to be run manually before restarting `cosmovisor` with the new binary. For this reason, we recommend applications adopt in-place store migrations.*
 
-*Note: If validators would like to enable the auto-download option (which [we don't recommend](#auto-download)), and they are currently running an application using Cosmos SDK `v0.42`, they will need to use Cosmovisor [`v0.1`](https://github.com/cosmos/cosmos-sdk/releases/tag/cosmovisor%2Fv0.1.0). Later versions of Cosmovisor do not support Cosmos SDK `v0.44.3` or earlier if the auto-download option is enabled.*
+*Note: If validators would like to enable the auto-download option (which [we don't recommend](#auto-download)), and they are currently running an application using Cosmos SDK `v0.42`, they will need to use Cosmovisor [`v0.1`](https://github.com/shapeshift/cosmos-sdk/releases/tag/cosmovisor%2Fv0.1.0). Later versions of Cosmovisor do not support Cosmos SDK `v0.44.3` or earlier if the auto-download option is enabled.*
 
 ## Contributing
 
@@ -44,7 +44,7 @@ Release branches have the following format `release/cosmovisor/vA.B.x`, where A 
 
 ### Installation
 
-You can download Cosmovisor from the [GitHub releases](https://github.com/cosmos/cosmos-sdk/releases/tag/cosmovisor%2Fv1.3.0).
+You can download Cosmovisor from the [GitHub releases](https://github.com/shapeshift/cosmos-sdk/releases/tag/cosmovisor%2Fv1.3.0).
 
 To install the latest version of `cosmovisor`, run the following command:
 
@@ -55,7 +55,7 @@ go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@latest
 To install a previous version, you can specify the version. IMPORTANT: Chains that use Cosmos SDK v0.44.3 or earlier (eg v0.44.2) and want to use auto-download feature MUST use `cosmovisor v0.1.0`
 
 ```shell
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v0.1.0
+go install github.com/shapeshift/cosmos-sdk/cosmovisor/cmd/cosmovisor@v0.1.0
 ```
 
 Run `cosmovisor version` to check the cosmovisor version.
@@ -335,7 +335,7 @@ cosmovisor run start
 
 Update app to the latest version (e.g. v0.45).
 
-Next, we can add a migration - which is defined using `x/upgrade` [upgrade plan](https://github.com/cosmos/cosmos-sdk/blob/main/docs/core/upgrade.md) (you may refer to a past version if you are using an older Cosmos SDK release). In a migration we can do any deterministic state change.
+Next, we can add a migration - which is defined using `x/upgrade` [upgrade plan](https://github.com/shapeshift/cosmos-sdk/blob/main/docs/core/upgrade.md) (you may refer to a past version if you are using an older Cosmos SDK release). In a migration we can do any deterministic state change.
 
 Build the new version `simd` binary:
 

@@ -15,7 +15,7 @@ To enable Rosetta API support, it's required to add the `RosettaCommand` to your
 Import the `server` package:
 
 ```go
-import "github.com/cosmos/cosmos-sdk/server"
+import "github.com/shapeshift/cosmos-sdk/server"
 ```
 
 Find the following line:

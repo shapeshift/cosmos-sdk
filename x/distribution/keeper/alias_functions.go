@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/types"
 )
 
 // get outstanding rewards

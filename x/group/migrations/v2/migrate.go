@@ -4,12 +4,12 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/group"
-	"github.com/cosmos/cosmos-sdk/x/group/internal/orm"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/address"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/x/group"
+	"github.com/shapeshift/cosmos-sdk/x/group/internal/orm"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/gov/client/cli"
 )
 
 func (s *CLITestSuite) TestCmdParams() {

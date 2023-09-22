@@ -9,17 +9,17 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	slashingtestutil "github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	sdktestutil "github.com/shapeshift/cosmos-sdk/testutil"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	govtypes "github.com/shapeshift/cosmos-sdk/x/gov/types"
+	slashingkeeper "github.com/shapeshift/cosmos-sdk/x/slashing/keeper"
+	slashingtestutil "github.com/shapeshift/cosmos-sdk/x/slashing/testutil"
+	slashingtypes "github.com/shapeshift/cosmos-sdk/x/slashing/types"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 var consAddr = sdk.ConsAddress(sdk.AccAddress([]byte("addr1_______________")))

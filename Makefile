@@ -9,7 +9,7 @@ LEDGER_ENABLED ?= true
 BINDIR ?= $(GOPATH)/bin
 BUILDDIR ?= $(CURDIR)/build
 MOCKS_DIR = $(CURDIR)/tests/mocks
-HTTPS_GIT := https://github.com/cosmos/cosmos-sdk.git
+HTTPS_GIT := https://github.com/shapeshift/cosmos-sdk.git
 DOCKER := $(shell which docker)
 PROJECT_NAME = $(shell git remote get-url origin | xargs basename -s .git)
 DOCS_DOMAIN=docs.cosmos.network
@@ -27,7 +27,7 @@ ifeq ($(LEDGER_ENABLED),true)
 	else
 	UNAME_S = $(shell uname -s)
 	ifeq ($(UNAME_S),OpenBSD)
-		$(warning OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/issues/1988))
+		$(warning OpenBSD detected, disabling ledger support (https://github.com/shapeshift/cosmos-sdk/issues/1988))
 	else
 		GCC = $(shell command -v gcc 2> /dev/null)
 		ifeq ($(GCC),)
@@ -54,11 +54,11 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=sim \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=simd \
-		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
-		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
-		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
+ldflags = -X github.com/shapeshift/cosmos-sdk/version.Name=sim \
+		  -X github.com/shapeshift/cosmos-sdk/version.AppName=simd \
+		  -X github.com/shapeshift/cosmos-sdk/version.Version=$(VERSION) \
+		  -X github.com/shapeshift/cosmos-sdk/version.Commit=$(COMMIT) \
+		  -X "github.com/shapeshift/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
 		  -X github.com/cometbft/cometbft/version.TMCoreSemVer=$(TMVERSION)
 
 
@@ -177,7 +177,7 @@ update-swagger-docs: statik
 .PHONY: update-swagger-docs
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/shapeshift/cosmos-sdk/types"
 	godoc -http=:6060
 
 # This builds the docs.cosmos.network docs using docusaurus.
@@ -375,12 +375,12 @@ format:
 DEVDOC_SAVE = docker commit `docker ps -a -n 1 -q` devdoc:local
 
 devdoc-init:
-	$(DOCKER) run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" tendermint/devdoc echo
+	$(DOCKER) run -it -v "$(CURDIR):/go/src/github.com/shapeshift/cosmos-sdk" -w "/go/src/github.com/shapeshift/cosmos-sdk" tendermint/devdoc echo
 	# TODO make this safer
 	$(call DEVDOC_SAVE)
 
 devdoc:
-	$(DOCKER) run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" devdoc:local bash
+	$(DOCKER) run -it -v "$(CURDIR):/go/src/github.com/shapeshift/cosmos-sdk" -w "/go/src/github.com/shapeshift/cosmos-sdk" devdoc:local bash
 
 devdoc-save:
 	# TODO make this safer

@@ -1,6 +1,6 @@
 package errors
 
-import "github.com/cosmos/cosmos-sdk/types/errors"
+import "github.com/shapeshift/cosmos-sdk/types/errors"
 
 // mathCodespace is the codespace for all errors defined in math package
 const mathCodespace = "math"

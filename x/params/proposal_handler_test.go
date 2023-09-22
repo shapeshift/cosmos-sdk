@@ -3,20 +3,20 @@ package params_test
 import (
 	"testing"
 
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/params/keeper"
-	paramstestutil "github.com/cosmos/cosmos-sdk/x/params/testutil"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	govv1beta1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/x/params"
+	"github.com/shapeshift/cosmos-sdk/x/params/keeper"
+	paramstestutil "github.com/shapeshift/cosmos-sdk/x/params/testutil"
+	paramtypes "github.com/shapeshift/cosmos-sdk/x/params/types"
+	"github.com/shapeshift/cosmos-sdk/x/params/types/proposal"
 )
 
 // StakingKeeper defines the expected staking keeper

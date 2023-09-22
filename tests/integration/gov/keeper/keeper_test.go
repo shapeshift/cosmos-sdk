@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/keeper"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/gov/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types"
+	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
+	minttypes "github.com/shapeshift/cosmos-sdk/x/mint/types"
 )
 
 // KeeperTestSuite only tests gov's keeper logic around tallying, since it

@@ -7,7 +7,7 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	cryptokeyring "github.com/cosmos/cosmos-sdk/crypto/keyring"
+	cryptokeyring "github.com/shapeshift/cosmos-sdk/crypto/keyring"
 )
 
 // available output formats.
@@ -57,7 +57,7 @@ func printKeyringRecords(w io.Writer, records []*cryptokeyring.Record, output st
 		}
 
 	case OutputFormatJSON:
-		// TODO https://github.com/cosmos/cosmos-sdk/issues/8046
+		// TODO https://github.com/shapeshift/cosmos-sdk/issues/8046
 		out, err := json.Marshal(kos)
 		if err != nil {
 			return err

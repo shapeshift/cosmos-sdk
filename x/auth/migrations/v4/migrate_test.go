@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/auth/exported"
-	v1 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
-	v4 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v4"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/auth"
+	"github.com/shapeshift/cosmos-sdk/x/auth/exported"
+	v1 "github.com/shapeshift/cosmos-sdk/x/auth/migrations/v1"
+	v4 "github.com/shapeshift/cosmos-sdk/x/auth/migrations/v4"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 type mockSubspace struct {

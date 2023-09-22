@@ -19,7 +19,7 @@ ENV PACKAGES curl make git libc-dev bash gcc linux-headers eudev-dev
 RUN apk add --no-cache $PACKAGES
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/cosmos/cosmos-sdk
+WORKDIR /go/src/github.com/shapeshift/cosmos-sdk
 
 # optimization: if go.sum didn't change, docker will use cached image
 COPY go.mod go.sum ./
@@ -48,4 +48,4 @@ WORKDIR /root
 RUN apk add --no-cache curl make bash jq sed
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/cosmos/cosmos-sdk/build/simd /usr/bin/simd
+COPY --from=build-env /go/src/github.com/shapeshift/cosmos-sdk/build/simd /usr/bin/simd

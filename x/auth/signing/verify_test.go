@@ -5,21 +5,21 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
+	kmultisig "github.com/shapeshift/cosmos-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/types/multisig"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/auth"
+	"github.com/shapeshift/cosmos-sdk/x/auth/ante"
 
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/auth/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/shapeshift/cosmos-sdk/x/auth/signing"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 func TestVerifySignature(t *testing.T) {

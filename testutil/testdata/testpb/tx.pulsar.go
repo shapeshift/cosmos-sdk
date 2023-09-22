@@ -1432,7 +1432,7 @@ func (x *MsgCreateDogResponse) GetName() string {
 }
 
 // TestMsg is msg type for testing protobuf message using any, as defined in
-// https://github.com/cosmos/cosmos-sdk/issues/6213.
+// https://github.com/shapeshift/cosmos-sdk/issues/6213.
 type TestMsg struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

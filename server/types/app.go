@@ -13,11 +13,11 @@ import (
 	"github.com/cosmos/gogoproto/grpc"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/snapshots"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/server/api"
+	"github.com/shapeshift/cosmos-sdk/server/config"
+	"github.com/shapeshift/cosmos-sdk/snapshots"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
 )
 
 // ServerStartTime defines the time duration that the server need to stay running after startup

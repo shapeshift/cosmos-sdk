@@ -1,13 +1,13 @@
 // Package v040 is copy-pasted from:
-// https://github.com/cosmos/cosmos-sdk/blob/v0.41.0/x/slashing/types/keys.go
+// https://github.com/shapeshift/cosmos-sdk/blob/v0.41.0/x/slashing/types/keys.go
 package legacy
 
 import (
 	"encoding/binary"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	v1auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v1"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	v1auth "github.com/shapeshift/cosmos-sdk/x/auth/migrations/v1"
 )
 
 const (

@@ -1,7 +1,7 @@
 package snapshot
 
 import (
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
+	servertypes "github.com/shapeshift/cosmos-sdk/server/types"
 	"github.com/spf13/cobra"
 )
 

@@ -29,5 +29,5 @@ For non Cosmos SDK related tooling, you can have a look at the [Awesome Cosmos](
 :::
 
 :::note
-If you would like to add your tooling to this section, please make a [PR to the Cosmos SDK](https://github.com/cosmos/cosmos-sdk/edit/main/docs/docs/ecosystem/README.md). 
+If you would like to add your tooling to this section, please make a [PR to the Cosmos SDK](https://github.com/shapeshift/cosmos-sdk/edit/main/docs/docs/ecosystem/README.md). 
 :::

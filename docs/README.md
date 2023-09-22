@@ -1,6 +1,6 @@
 # Updating the docs
 
-If you want to open a PR in Cosmos SDK to update the documentation, please follow the guidelines in [`CONTRIBUTING.md`](https://github.com/cosmos/cosmos-sdk/tree/main/CONTRIBUTING.md#updating-documentation) and the [Documentation Writing Guidelines](./DOC_WRITING_GUIDELINES.md).
+If you want to open a PR in Cosmos SDK to update the documentation, please follow the guidelines in [`CONTRIBUTING.md`](https://github.com/shapeshift/cosmos-sdk/tree/main/CONTRIBUTING.md#updating-documentation) and the [Documentation Writing Guidelines](./DOC_WRITING_GUIDELINES.md).
 
 ## Stack
 

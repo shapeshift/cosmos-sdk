@@ -92,7 +92,7 @@ grpcurl \
     cosmos.bank.v1beta1.Query/AllBalances
 ```
 
-The list of all available gRPC query endpoints is [coming soon](https://github.com/cosmos/cosmos-sdk/issues/7786).
+The list of all available gRPC query endpoints is [coming soon](https://github.com/shapeshift/cosmos-sdk/issues/7786).
 
 #### Query for historical state using grpcurl
 
@@ -117,7 +117,7 @@ The following snippet shows how to query the state using gRPC inside a Go progra
 
 
 ```bash
-go get github.com/cosmos/cosmos-sdk@main
+go get github.com/shapeshift/cosmos-sdk@main
 ```
 
 ```go
@@ -129,9 +129,9 @@ import (
 
     "google.golang.org/grpc"
 
-    "github.com/cosmos/cosmos-sdk/codec"
-    sdk "github.com/cosmos/cosmos-sdk/types"
-    banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+    "github.com/shapeshift/cosmos-sdk/codec"
+    sdk "github.com/shapeshift/cosmos-sdk/types"
+    banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
 )
 
 func queryState() error {
@@ -175,7 +175,7 @@ func main() {
 }
 ```
 
-You can replace the query client (here we are using `x/bank`'s) with one generated from any other Protobuf service. The list of all available gRPC query endpoints is [coming soon](https://github.com/cosmos/cosmos-sdk/issues/7786).
+You can replace the query client (here we are using `x/bank`'s) with one generated from any other Protobuf service. The list of all available gRPC query endpoints is [coming soon](https://github.com/shapeshift/cosmos-sdk/issues/7786).
 
 #### Query for historical state using Go
 
@@ -191,10 +191,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	grpctypes "github.com/shapeshift/cosmos-sdk/types/grpc"
+	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
 )
 
 func queryState() error {

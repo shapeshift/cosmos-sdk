@@ -3,11 +3,11 @@ package keeper
 import (
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/authz"
+	"github.com/shapeshift/cosmos-sdk/internal/conv"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/address"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	"github.com/shapeshift/cosmos-sdk/x/authz"
 )
 
 // Keys for store prefixes

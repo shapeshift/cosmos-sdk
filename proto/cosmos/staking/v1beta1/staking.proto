@@ -12,7 +12,7 @@ import "amino/amino.proto";
 import "tendermint/types/types.proto";
 import "tendermint/abci/types.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/staking/types";
+option go_package = "github.com/shapeshift/cosmos-sdk/x/staking/types";
 
 // HistoricalInfo contains header and validator information for a given block.
 // It is stored as part of staking module's state, which persists the `n` most
@@ -32,19 +32,19 @@ message CommissionRates {
   // rate is the commission rate charged to delegators, as a fraction.
   string rate = 1 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
   // max_rate defines the maximum commission rate which validator can ever charge, as a fraction.
   string max_rate = 2 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
   // max_change_rate defines the maximum daily increase of the validator commission, as a fraction.
   string max_change_rate = 3 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
 }
@@ -103,13 +103,13 @@ message Validator {
   // tokens define the delegated tokens (incl. self-delegation).
   string tokens = 5 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
   // delegator_shares defines total shares issued to a validator's delegators.
   string delegator_shares = 6 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
   // description defines the description terms for the validator.
@@ -126,7 +126,7 @@ message Validator {
   // Since: cosmos-sdk 0.46
   string min_self_delegation = 11 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
 
@@ -210,7 +210,7 @@ message Delegation {
   // shares define the delegation shares received.
   string shares = 3 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
 }
@@ -244,13 +244,13 @@ message UnbondingDelegationEntry {
   // initial_balance defines the tokens initially scheduled to receive at completion.
   string initial_balance = 3 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
   // balance defines the tokens to receive at completion.
   string balance = 4 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
   // Incrementing id that uniquely identifies this entry
@@ -273,13 +273,13 @@ message RedelegationEntry {
   // initial_balance defines the initial balance when redelegation started.
   string initial_balance = 3 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
   // shares_dst is the amount of destination-validator shares created by redelegation.
   string shares_dst = 4 [
     (cosmos_proto.scalar)  = "cosmos.Dec",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
   // Incrementing id that uniquely identifies this entry
@@ -327,7 +327,7 @@ message Params {
   // min_commission_rate is the chain-wide minimum commission rate that a validator can charge their delegators
   string min_commission_rate = 6 [
     (gogoproto.moretags)   = "yaml:\"min_commission_rate\"",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Dec",
     (gogoproto.nullable)   = false
   ];
 }
@@ -352,7 +352,7 @@ message RedelegationEntryResponse {
   RedelegationEntry redelegation_entry = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
   string            balance            = 4 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false
   ];
 }
@@ -374,14 +374,14 @@ message Pool {
   option (gogoproto.equal)       = true;
   string not_bonded_tokens       = 1 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false,
     (gogoproto.jsontag)    = "not_bonded_tokens",
     (amino.dont_omitempty) = true
   ];
   string bonded_tokens = 2 [
     (cosmos_proto.scalar)  = "cosmos.Int",
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/shapeshift/cosmos-sdk/types.Int",
     (gogoproto.nullable)   = false,
     (gogoproto.jsontag)    = "bonded_tokens",
     (amino.dont_omitempty) = true

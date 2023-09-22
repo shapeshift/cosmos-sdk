@@ -5,8 +5,8 @@ package signing
 
 import (
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
-	types1 "github.com/cosmos/cosmos-sdk/crypto/types"
+	types "github.com/shapeshift/cosmos-sdk/codec/types"
+	types1 "github.com/shapeshift/cosmos-sdk/crypto/types"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
 	math "math"

@@ -10,7 +10,7 @@ import (
 	tmtypes "github.com/cometbft/cometbft/types"
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
 )
 
 // LegacyAmino defines a wrapper for an Amino codec that properly

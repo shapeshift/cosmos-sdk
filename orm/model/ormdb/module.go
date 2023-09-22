@@ -10,19 +10,19 @@ import (
 
 	ormv1alpha1 "cosmossdk.io/api/cosmos/orm/v1alpha1"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/ormjson"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormjson"
 
 	"google.golang.org/protobuf/reflect/protodesc"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/encodeutil"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/encodeutil"
 
 	"google.golang.org/protobuf/proto"
 
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormtable"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormtable"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 )
 
 // ModuleDB defines the ORM database type to be used by modules.

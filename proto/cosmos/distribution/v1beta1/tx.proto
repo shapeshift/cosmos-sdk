@@ -1,7 +1,7 @@
 syntax = "proto3";
 package cosmos.distribution.v1beta1;
 
-option go_package            = "github.com/cosmos/cosmos-sdk/x/distribution/types";
+option go_package            = "github.com/shapeshift/cosmos-sdk/x/distribution/types";
 option (gogoproto.equal_all) = true;
 
 import "gogoproto/gogo.proto";
@@ -83,7 +83,7 @@ message MsgWithdrawDelegatorRewardResponse {
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -106,7 +106,7 @@ message MsgWithdrawValidatorCommissionResponse {
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -122,7 +122,7 @@ message MsgFundCommunityPool {
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
   string depositor = 2 [(cosmos_proto.scalar) = "cosmos.AddressString"];
 }
@@ -167,7 +167,7 @@ message MsgCommunityPoolSpend {
   repeated cosmos.base.v1beta1.Coin amount = 3 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 }
 

@@ -10,7 +10,7 @@ import (
 	coretypes "github.com/cometbft/cometbft/rpc/core/types"
 	tmtypes "github.com/cometbft/cometbft/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/client"
 )
 
 var _ client.TendermintRPC = (*MockTendermintRPC)(nil)

@@ -9,20 +9,20 @@ import (
 
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/shapeshift/cosmos-sdk/testutil"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
 
 	abci "github.com/cometbft/cometbft/abci/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltestutil "github.com/cosmos/cosmos-sdk/x/genutil/testutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/golang/mock/gomock"
+	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/x/genutil"
+	genutiltestutil "github.com/shapeshift/cosmos-sdk/x/genutil/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/genutil/types"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/suite"
 )
 

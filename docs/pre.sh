@@ -10,7 +10,7 @@ for D in ../x/*; do
 done
 
 ## Vesting is a submodule of auth, but we still want to display it in docs
-## TODO to be removed in https://github.com/cosmos/cosmos-sdk/issues/9958
+## TODO to be removed in https://github.com/shapeshift/cosmos-sdk/issues/9958
 cp ../x/auth/vesting/README.md ./docs/modules/auth/1-vesting.md
 cp ../x/auth/tx/README.md ./docs/modules/auth/2-tx.md
 

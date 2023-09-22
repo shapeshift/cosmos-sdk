@@ -1,11 +1,11 @@
 package cli
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/types/module"
+	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/x/genutil"
+	genutiltypes "github.com/shapeshift/cosmos-sdk/x/genutil/types"
 
 	"github.com/spf13/cobra"
 )

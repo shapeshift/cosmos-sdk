@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
+	"github.com/shapeshift/cosmos-sdk/x/staking"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func TestTallyNoOneVotes(t *testing.T) {

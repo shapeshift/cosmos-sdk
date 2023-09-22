@@ -9,20 +9,20 @@ import (
 	"github.com/stretchr/testify/suite"
 	"pgregory.net/rapid"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	authkeeper "github.com/shapeshift/cosmos-sdk/x/auth/keeper"
+	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"
+	banktestutil "github.com/shapeshift/cosmos-sdk/x/bank/testutil"
+	minttypes "github.com/shapeshift/cosmos-sdk/x/mint/types"
+	stakingkeeper "github.com/shapeshift/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/shapeshift/cosmos-sdk/x/staking/testutil"
 
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 var (

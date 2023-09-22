@@ -5,10 +5,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

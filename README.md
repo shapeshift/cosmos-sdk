@@ -5,14 +5,14 @@
 ![banner](docs/static/img/banner.jpg)
 
 <div align="center">
-  <a href="https://github.com/cosmos/cosmos-sdk/blob/main/LICENSE">
+  <a href="https://github.com/shapeshift/cosmos-sdk/blob/main/LICENSE">
     <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/cosmos/cosmos-sdk.svg" />
   </a>
-  <a href="https://pkg.go.dev/github.com/cosmos/cosmos-sdk">
-    <img src="https://pkg.go.dev/badge/github.com/cosmos/cosmos-sdk.svg" alt="Go Reference">
+  <a href="https://pkg.go.dev/github.com/shapeshift/cosmos-sdk">
+    <img src="https://pkg.go.dev/badge/github.com/shapeshift/cosmos-sdk.svg" alt="Go Reference">
   </a>
-  <a href="https://goreportcard.com/report/github.com/cosmos/cosmos-sdk">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/cosmos/cosmos-sdk" />
+  <a href="https://goreportcard.com/report/github.com/shapeshift/cosmos-sdk">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/shapeshift/cosmos-sdk" />
   </a>
   <a href="https://codecov.io/gh/cosmos/cosmos-sdk">
     <img alt="Code Coverage" src="https://codecov.io/gh/cosmos/cosmos-sdk/branch/main/graph/badge.svg" />
@@ -22,11 +22,11 @@
   <a href="https://discord.gg/AzefAFd">
     <img alt="Discord" src="https://img.shields.io/discord/669268347736686612.svg" />
   </a>
-  <a href="https://sourcegraph.com/github.com/cosmos/cosmos-sdk?badge">
-    <img alt="Imported by" src="https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/badge.svg" />
+  <a href="https://sourcegraph.com/github.com/shapeshift/cosmos-sdk?badge">
+    <img alt="Imported by" src="https://sourcegraph.com/github.com/shapeshift/cosmos-sdk/-/badge.svg" />
   </a>
-    <img alt="Sims" src="https://github.com/cosmos/cosmos-sdk/workflows/Sims/badge.svg" />
-    <img alt="Lint Satus" src="https://github.com/cosmos/cosmos-sdk/workflows/Lint/badge.svg" />
+    <img alt="Sims" src="https://github.com/shapeshift/cosmos-sdk/workflows/Sims/badge.svg" />
+    <img alt="Lint Satus" src="https://github.com/shapeshift/cosmos-sdk/workflows/Lint/badge.svg" />
 </div>
 
 The Cosmos SDK is a framework for building blockchain applications. [Tendermint Core (BFT Consensus)](https://github.com/tendermint/tendermint) and the Cosmos SDK are written in the Go programming language. Cosmos SDK is used to build [Gaia](https://github.com/cosmos/gaia), the implementation of the Cosmos Hub.

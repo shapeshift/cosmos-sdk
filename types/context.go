@@ -10,8 +10,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/store/gaskv"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/store/gaskv"
+	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
 )
 
 /*

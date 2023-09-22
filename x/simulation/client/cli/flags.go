@@ -3,7 +3,7 @@ package cli
 import (
 	"flag"
 
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/shapeshift/cosmos-sdk/types/simulation"
 )
 
 const DefaultSeedValue = 42

@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
+	"github.com/shapeshift/cosmos-sdk/testutil/network"
 )
 
 func TestE2ETestSuite(t *testing.T) {

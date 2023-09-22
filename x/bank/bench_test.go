@@ -9,15 +9,15 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/auth/types"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
+	"github.com/shapeshift/cosmos-sdk/x/bank/testutil"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 var moduleAccAddr = authtypes.NewModuleAddress(stakingtypes.BondedPoolName)
@@ -59,7 +59,7 @@ func genSequenceOfTxs(txGen client.TxConfig,
 }
 
 func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/shapeshift/cosmos-sdk/issues/10023")
 
 	b.ReportAllocs()
 	// Add an account at genesis
@@ -104,7 +104,7 @@ func BenchmarkOneBankSendTxPerBlock(b *testing.B) {
 }
 
 func BenchmarkOneBankMultiSendTxPerBlock(b *testing.B) {
-	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/cosmos/cosmos-sdk/issues/10023")
+	// b.Skip("Skipping benchmark with buggy code reported at https://github.com/shapeshift/cosmos-sdk/issues/10023")
 
 	b.ReportAllocs()
 	// Add an account at genesis

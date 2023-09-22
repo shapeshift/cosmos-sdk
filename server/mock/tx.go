@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/shapeshift/cosmos-sdk/x/auth/signing"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	txsigning "github.com/shapeshift/cosmos-sdk/types/tx/signing"
 )
 
 // An sdk.Tx which is its own sdk.Msg.

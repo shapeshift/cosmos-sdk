@@ -3,10 +3,10 @@ package cli_test
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
-	"github.com/cosmos/cosmos-sdk/x/feegrant/client/cli"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	clitestutil "github.com/shapeshift/cosmos-sdk/testutil/cli"
+	"github.com/shapeshift/cosmos-sdk/x/feegrant"
+	"github.com/shapeshift/cosmos-sdk/x/feegrant/client/cli"
 )
 
 func (s *CLITestSuite) TestCmdGetFeeGrant() {

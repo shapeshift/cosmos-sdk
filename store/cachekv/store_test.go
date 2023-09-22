@@ -8,9 +8,9 @@ import (
 	tmrand "github.com/cometbft/cometbft/libs/rand"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/store/cachekv"
+	"github.com/shapeshift/cosmos-sdk/store/dbadapter"
+	"github.com/shapeshift/cosmos-sdk/store/types"
 )
 
 func newCacheKVStore() types.CacheKVStore {

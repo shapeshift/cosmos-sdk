@@ -60,7 +60,7 @@ if err := rootCmd.Execute(); err != nil {
 To define flags for a message, you can use the `Builder.AddMessageFlags()` method. This method takes the `cobra.Command` instance and the message type as input, and generates flags for each field in the message.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/1ac260cb1c6f05666f47e67f8b2cfd6229a55c3b/client/v2/autocli/common.go#L44-L49
+https://github.com/shapeshift/cosmos-sdk/blob/1ac260cb1c6f05666f47e67f8b2cfd6229a55c3b/client/v2/autocli/common.go#L44-L49
 ```
 
 The `binder` variable returned by the `AddMessageFlags()` method is used to bind the command-line arguments to the fields in the message.
@@ -96,7 +96,7 @@ By default, `autocli` generates a command for each method in your gRPC service. 
 This example shows how to use the `autocliv1.ServiceCommandDescriptor` struct to group related commands together and specify subcommands in your gRPC service by defining an instance of `autocliv1.ModuleOptions` in your `autocli.go` file.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/bcdf81cbaf8d70c4e4fa763f51292d54aed689fd/x/gov/autocli.go#L9-L27
+https://github.com/shapeshift/cosmos-sdk/blob/bcdf81cbaf8d70c4e4fa763f51292d54aed689fd/x/gov/autocli.go#L9-L27
 ```
 
 The `AutoCLIOptions()` method in the autocli package allows you to specify the services and sub-commands to be mapped for your app. In the example code, an instance of the `autocliv1.ModuleOptions` struct is defined in the `appmodule.AppModule` implementation located in the `x/gov/autocli.go` file. This configuration groups related commands together and specifies subcommands for each service.
@@ -110,7 +110,7 @@ To add positional arguments to a command, you can use the `autocliv1.PositionalA
 Here's an example of how to define a positional argument for the `Account` method of the `auth` service:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/bcdf81cbaf8d70c4e4fa763f51292d54aed689fd/x/auth/autocli.go#L8-L32
+https://github.com/shapeshift/cosmos-sdk/blob/bcdf81cbaf8d70c4e4fa763f51292d54aed689fd/x/auth/autocli.go#L8-L32
 ```
 
 Here are some example commands that use the positional arguments we defined above:

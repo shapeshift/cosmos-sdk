@@ -10,10 +10,10 @@ import (
 	types3 "github.com/cometbft/cometbft/abci/types"
 	types "github.com/cometbft/cometbft/proto/tendermint/types"
 	_ "github.com/cosmos/cosmos-proto"
-	types1 "github.com/cosmos/cosmos-sdk/codec/types"
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
-	types2 "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	types1 "github.com/shapeshift/cosmos-sdk/codec/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/shapeshift/cosmos-sdk/types"
+	types2 "github.com/shapeshift/cosmos-sdk/types"
+	_ "github.com/shapeshift/cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	github_com_cosmos_gogoproto_proto "github.com/cosmos/gogoproto/proto"
 	proto "github.com/cosmos/gogoproto/proto"
@@ -170,11 +170,11 @@ func (m *HistoricalInfo) GetValset() []Validator {
 // a validator.
 type CommissionRates struct {
 	// rate is the commission rate charged to delegators, as a fraction.
-	Rate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,1,opt,name=rate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"rate"`
+	Rate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,1,opt,name=rate,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"rate"`
 	// max_rate defines the maximum commission rate which validator can ever charge, as a fraction.
-	MaxRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,2,opt,name=max_rate,json=maxRate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"max_rate"`
+	MaxRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,2,opt,name=max_rate,json=maxRate,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"max_rate"`
 	// max_change_rate defines the maximum daily increase of the validator commission, as a fraction.
-	MaxChangeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,3,opt,name=max_change_rate,json=maxChangeRate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"max_change_rate"`
+	MaxChangeRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,3,opt,name=max_change_rate,json=maxChangeRate,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"max_change_rate"`
 }
 
 func (m *CommissionRates) Reset()      { *m = CommissionRates{} }
@@ -355,9 +355,9 @@ type Validator struct {
 	// status is the validator status (bonded/unbonding/unbonded).
 	Status BondStatus `protobuf:"varint,4,opt,name=status,proto3,enum=cosmos.staking.v1beta1.BondStatus" json:"status,omitempty"`
 	// tokens define the delegated tokens (incl. self-delegation).
-	Tokens github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,5,opt,name=tokens,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"tokens"`
+	Tokens github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,5,opt,name=tokens,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"tokens"`
 	// delegator_shares defines total shares issued to a validator's delegators.
-	DelegatorShares github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=delegator_shares,json=delegatorShares,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"delegator_shares"`
+	DelegatorShares github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=delegator_shares,json=delegatorShares,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"delegator_shares"`
 	// description defines the description terms for the validator.
 	Description Description `protobuf:"bytes,7,opt,name=description,proto3" json:"description"`
 	// unbonding_height defines, if unbonding, the height at which this validator has begun unbonding.
@@ -369,7 +369,7 @@ type Validator struct {
 	// min_self_delegation is the validator's self declared minimum self delegation.
 	//
 	// Since: cosmos-sdk 0.46
-	MinSelfDelegation github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,11,opt,name=min_self_delegation,json=minSelfDelegation,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"min_self_delegation"`
+	MinSelfDelegation github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,11,opt,name=min_self_delegation,json=minSelfDelegation,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"min_self_delegation"`
 	// strictly positive if this validator's unbonding has been stopped by external modules
 	UnbondingOnHoldRefCount int64 `protobuf:"varint,12,opt,name=unbonding_on_hold_ref_count,json=unbondingOnHoldRefCount,proto3" json:"unbonding_on_hold_ref_count,omitempty"`
 	// list of unbonding ids, each uniquely identifing an unbonding of this validator
@@ -633,7 +633,7 @@ type Delegation struct {
 	// validator_address is the bech32-encoded address of the validator.
 	ValidatorAddress string `protobuf:"bytes,2,opt,name=validator_address,json=validatorAddress,proto3" json:"validator_address,omitempty"`
 	// shares define the delegation shares received.
-	Shares github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,3,opt,name=shares,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"shares"`
+	Shares github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,3,opt,name=shares,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"shares"`
 }
 
 func (m *Delegation) Reset()      { *m = Delegation{} }
@@ -718,9 +718,9 @@ type UnbondingDelegationEntry struct {
 	// completion_time is the unix time for unbonding completion.
 	CompletionTime time.Time `protobuf:"bytes,2,opt,name=completion_time,json=completionTime,proto3,stdtime" json:"completion_time"`
 	// initial_balance defines the tokens initially scheduled to receive at completion.
-	InitialBalance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=initial_balance,json=initialBalance,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"initial_balance"`
+	InitialBalance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=initial_balance,json=initialBalance,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"initial_balance"`
 	// balance defines the tokens to receive at completion.
-	Balance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=balance,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"balance"`
+	Balance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=balance,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"balance"`
 	// Incrementing id that uniquely identifies this entry
 	UnbondingId uint64 `protobuf:"varint,5,opt,name=unbonding_id,json=unbondingId,proto3" json:"unbonding_id,omitempty"`
 	// Strictly positive if this entry's unbonding has been stopped by external modules
@@ -794,9 +794,9 @@ type RedelegationEntry struct {
 	// completion_time defines the unix time for redelegation completion.
 	CompletionTime time.Time `protobuf:"bytes,2,opt,name=completion_time,json=completionTime,proto3,stdtime" json:"completion_time"`
 	// initial_balance defines the initial balance when redelegation started.
-	InitialBalance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=initial_balance,json=initialBalance,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"initial_balance"`
+	InitialBalance github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,3,opt,name=initial_balance,json=initialBalance,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"initial_balance"`
 	// shares_dst is the amount of destination-validator shares created by redelegation.
-	SharesDst github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,4,opt,name=shares_dst,json=sharesDst,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"shares_dst"`
+	SharesDst github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,4,opt,name=shares_dst,json=sharesDst,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"shares_dst"`
 	// Incrementing id that uniquely identifies this entry
 	UnbondingId uint64 `protobuf:"varint,5,opt,name=unbonding_id,json=unbondingId,proto3" json:"unbonding_id,omitempty"`
 	// Strictly positive if this entry's unbonding has been stopped by external modules
@@ -921,7 +921,7 @@ type Params struct {
 	// bond_denom defines the bondable coin denomination.
 	BondDenom string `protobuf:"bytes,5,opt,name=bond_denom,json=bondDenom,proto3" json:"bond_denom,omitempty"`
 	// min_commission_rate is the chain-wide minimum commission rate that a validator can charge their delegators
-	MinCommissionRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=min_commission_rate,json=minCommissionRate,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Dec" json:"min_commission_rate" yaml:"min_commission_rate"`
+	MinCommissionRate github_com_cosmos_cosmos_sdk_types.Dec `protobuf:"bytes,6,opt,name=min_commission_rate,json=minCommissionRate,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Dec" json:"min_commission_rate" yaml:"min_commission_rate"`
 }
 
 func (m *Params) Reset()      { *m = Params{} }
@@ -1049,7 +1049,7 @@ func (m *DelegationResponse) GetBalance() types2.Coin {
 // responses.
 type RedelegationEntryResponse struct {
 	RedelegationEntry RedelegationEntry                      `protobuf:"bytes,1,opt,name=redelegation_entry,json=redelegationEntry,proto3" json:"redelegation_entry"`
-	Balance           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=balance,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"balance"`
+	Balance           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,4,opt,name=balance,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"balance"`
 }
 
 func (m *RedelegationEntryResponse) Reset()         { *m = RedelegationEntryResponse{} }
@@ -1150,8 +1150,8 @@ func (m *RedelegationResponse) GetEntries() []RedelegationEntryResponse {
 // Pool is used for tracking bonded and not-bonded token supply of the bond
 // denomination.
 type Pool struct {
-	NotBondedTokens github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=not_bonded_tokens,json=notBondedTokens,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"not_bonded_tokens"`
-	BondedTokens    github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=bonded_tokens,json=bondedTokens,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"bonded_tokens"`
+	NotBondedTokens github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,1,opt,name=not_bonded_tokens,json=notBondedTokens,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"not_bonded_tokens"`
+	BondedTokens    github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=bonded_tokens,json=bondedTokens,proto3,customtype=github.com/shapeshift/cosmos-sdk/types.Int" json:"bonded_tokens"`
 }
 
 func (m *Pool) Reset()         { *m = Pool{} }

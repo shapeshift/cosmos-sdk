@@ -17,7 +17,7 @@ sidebar_position: 1
 
 ## Abstract
 
-`x/evidence` is an implementation of a Cosmos SDK module, per [ADR 009](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-009-evidence-module.md),
+`x/evidence` is an implementation of a Cosmos SDK module, per [ADR 009](https://github.com/shapeshift/cosmos-sdk/blob/main/docs/architecture/adr-009-evidence-module.md),
 that allows for the submission and handling of arbitrary evidence of misbehavior such
 as equivocation and counterfactual signing.
 
@@ -220,7 +220,7 @@ The Cosmos SDK handles two types of evidence inside the ABCI `BeginBlock`:
 The evidence module handles these two evidence types the same way. First, the Cosmos SDK converts the Tendermint concrete evidence type to an SDK `Evidence` interface using `Equivocation` as the concrete type.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/evidence/v1beta1/evidence.proto#L12-L32
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/evidence/v1beta1/evidence.proto#L12-L32
 ```
 
 For some `Equivocation` submitted in `block` to be valid, it must satisfy:
@@ -244,7 +244,7 @@ validator to ever re-enter the validator set.
 The `Equivocation` evidence is handled as follows:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/evidence/keeper/infraction.go#L26-L140
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/evidence/keeper/infraction.go#L26-L140
 ```
 
 **Note:** The slashing, jailing, and tombstoning calls are delegated through the `x/slashing` module

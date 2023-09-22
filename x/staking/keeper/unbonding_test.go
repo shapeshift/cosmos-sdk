@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"cosmossdk.io/math"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/staking/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func (s *KeeperTestSuite) TestIncrementUnbondingID() {

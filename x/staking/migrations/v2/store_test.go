@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdktestuil "github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/cosmos/cosmos-sdk/x/staking/migrations/v1"
-	v2 "github.com/cosmos/cosmos-sdk/x/staking/migrations/v2"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdktestuil "github.com/shapeshift/cosmos-sdk/testutil"
+	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	v1 "github.com/shapeshift/cosmos-sdk/x/staking/migrations/v1"
+	v2 "github.com/shapeshift/cosmos-sdk/x/staking/migrations/v2"
+	"github.com/shapeshift/cosmos-sdk/x/staking/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func TestStoreMigration(t *testing.T) {

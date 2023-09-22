@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/exported"
-	v2 "github.com/cosmos/cosmos-sdk/x/slashing/migrations/v2"
-	v3 "github.com/cosmos/cosmos-sdk/x/slashing/migrations/v3"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/exported"
+	v2 "github.com/shapeshift/cosmos-sdk/x/slashing/migrations/v2"
+	v3 "github.com/shapeshift/cosmos-sdk/x/slashing/migrations/v3"
 )
 
 // Migrator is a struct for handling in-place store migrations.

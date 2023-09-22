@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"cosmossdk.io/math"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func (s *KeeperTestSuite) TestMsgUpdateParams() {

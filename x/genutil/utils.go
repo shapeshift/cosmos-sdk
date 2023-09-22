@@ -14,8 +14,8 @@ import (
 	tmtypes "github.com/cometbft/cometbft/types"
 	"github.com/cosmos/go-bip39"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptocodec "github.com/shapeshift/cosmos-sdk/crypto/codec"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
 )
 
 // ExportGenesisFile creates and writes the genesis configuration to disk. An

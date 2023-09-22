@@ -10,8 +10,8 @@ import (
 
 	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/fieldnames"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormtable"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/fieldnames"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormtable"
 )
 
 type tableGen struct {

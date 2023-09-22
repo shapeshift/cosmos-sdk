@@ -6,8 +6,8 @@ package types
 import (
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
-	types "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	types "github.com/shapeshift/cosmos-sdk/types"
+	_ "github.com/shapeshift/cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
@@ -70,7 +70,7 @@ func (AuthorizationType) EnumDescriptor() ([]byte, []int) {
 type StakeAuthorization struct {
 	// max_tokens specifies the maximum amount of tokens can be delegate to a validator. If it is
 	// empty, there is no spend limit and any amount of coins can be delegated.
-	MaxTokens *types.Coin `protobuf:"bytes,1,opt,name=max_tokens,json=maxTokens,proto3,castrepeated=github.com/cosmos/cosmos-sdk/types.Coin" json:"max_tokens,omitempty"`
+	MaxTokens *types.Coin `protobuf:"bytes,1,opt,name=max_tokens,json=maxTokens,proto3,castrepeated=github.com/shapeshift/cosmos-sdk/types.Coin" json:"max_tokens,omitempty"`
 	// validators is the oneof that represents either allow_list or deny_list
 	//
 	// Types that are valid to be assigned to Validators:

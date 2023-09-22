@@ -8,13 +8,13 @@ import (
 
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/distribution/simulation"
-	"github.com/cosmos/cosmos-sdk/x/distribution/testutil"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/simulation"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/types"
 )
 
 var (

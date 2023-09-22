@@ -7,9 +7,9 @@ import (
 	"cosmossdk.io/math"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	bank "github.com/shapeshift/cosmos-sdk/x/bank/types"
 )
 
 func TestBalanceValidate(t *testing.T) {

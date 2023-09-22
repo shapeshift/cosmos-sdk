@@ -240,7 +240,7 @@ func (d LegacyDec) ImmutOpInt(op func(LegacyDec, Int) LegacyDec, d2 Int) LegacyD
 func (d LegacyDec) ImmutOpInt64(op func(LegacyDec, int64) LegacyDec, d2 int64) LegacyDec {
 	// TODO: use already allocated operand bigint to avoid
 	// newint each time, add mutex for race condition
-	// Issue: https://github.com/cosmos/cosmos-sdk/issues/11166
+	// Issue: https://github.com/shapeshift/cosmos-sdk/issues/11166
 	return op(d.Clone(), d2)
 }
 
@@ -919,7 +919,7 @@ func FormatDec(v string) (string, error) {
 	}
 
 	// Ensure that the decimal part has only digits.
-	// https://github.com/cosmos/cosmos-sdk/issues/12811
+	// https://github.com/shapeshift/cosmos-sdk/issues/12811
 	if !hasOnlyDigits(decPart) {
 		return "", fmt.Errorf("non-digits detected after decimal point in: %q", decPart)
 	}

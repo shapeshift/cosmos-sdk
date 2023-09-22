@@ -6,13 +6,13 @@ import (
 
 	"cosmossdk.io/math"
 	"cosmossdk.io/simapp"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	"github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/golang/mock/gomock"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	banktestutil "github.com/shapeshift/cosmos-sdk/x/bank/testutil"
+	stakingkeeper "github.com/shapeshift/cosmos-sdk/x/staking/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/staking/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 )
 

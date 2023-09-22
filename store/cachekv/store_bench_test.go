@@ -5,8 +5,8 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
+	"github.com/shapeshift/cosmos-sdk/store/cachekv"
+	"github.com/shapeshift/cosmos-sdk/store/dbadapter"
 )
 
 var sink interface{}

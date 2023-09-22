@@ -3,7 +3,7 @@ package v1
 import (
 	"errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
 )
 
 // NewGenesisState creates a new genesis state for the governance module

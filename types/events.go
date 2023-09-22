@@ -13,7 +13,7 @@ import (
 	"github.com/cosmos/gogoproto/jsonpb"
 	proto "github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/codec"
 )
 
 // ----------------------------------------------------------------------------

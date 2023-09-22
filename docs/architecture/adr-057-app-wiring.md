@@ -17,7 +17,7 @@ dependency injection and declarative app configurations to replace the current `
 ## Context
 
 A number of factors have made the SDK and SDK apps in their current state hard to maintain. A symptom of the current
-state of complexity is [`simapp/app.go`](https://github.com/cosmos/cosmos-sdk/blob/c3edbb22cab8678c35e21fe0253919996b780c01/simapp/app.go)
+state of complexity is [`simapp/app.go`](https://github.com/shapeshift/cosmos-sdk/blob/c3edbb22cab8678c35e21fe0253919996b780c01/simapp/app.go)
 which contains almost 100 lines of imports and is otherwise over 600 lines of mostly boilerplate code that is
 generally copied to each new project. (Not to mention the additional boilerplate which gets copied in `simapp/simd`.)
 
@@ -50,7 +50,7 @@ and the container will figure out how to provide it.
 
 We explored several existing DI solutions in golang and felt that the reflection-based approach in [uber/dig](https://github.com/uber-go/dig)
 was closest to what we needed but not quite there. Assessing what we needed for the SDK, we designed and built
-the Cosmos SDK [depinject module](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/depinject), which has the following
+the Cosmos SDK [depinject module](https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/depinject), which has the following
 features:
 
 * dependency resolution and provision through functional constructors, ex: `func(need SomeDep) (AnotherDep, error)`
@@ -90,7 +90,7 @@ message ModuleConfig {
 }
 ```
 
-(See also https://github.com/cosmos/cosmos-sdk/blob/6e18f582bf69e3926a1e22a6de3c35ea327aadce/proto/cosmos/app/v1alpha1/config.proto)
+(See also https://github.com/shapeshift/cosmos-sdk/blob/6e18f582bf69e3926a1e22a6de3c35ea327aadce/proto/cosmos/app/v1alpha1/config.proto)
 
 The configuration for every module is itself a protobuf message and modules will be identified and loaded based
 on the protobuf type URL of their config object (ex. `cosmos.bank.module.v1.Module`). Modules are given a unique short `name`
@@ -137,7 +137,7 @@ In order for the two components of dependency injection and declarative configur
 we need a way for modules to actually register themselves and provide dependencies to the container.
 
 One additional complexity that needs to be handled at this layer is protobuf registry initialization. Recall that
-in both the current SDK `codec` and the proposed [ADR 054: Protobuf Semver Compatible Codegen](https://github.com/cosmos/cosmos-sdk/pull/11802),
+in both the current SDK `codec` and the proposed [ADR 054: Protobuf Semver Compatible Codegen](https://github.com/shapeshift/cosmos-sdk/pull/11802),
 protobuf types need to be explicitly registered. Given that the app config itself is based on protobuf and
 uses protobuf `Any` types, protobuf registration needs to happen before the app config itself can be decoded. Because
 we don't know which protobuf `Any` types will be needed a priori and modules themselves define those types, we need
@@ -148,7 +148,7 @@ to decode the app config in separate phases:
    on file descriptors and types provided by each required module
 3. decode the app config as proto JSON using the protobuf type registry
 
-Because in [ADR 054: Protobuf Semver Compatible Codegen](https://github.com/cosmos/cosmos-sdk/pull/11802), each module
+Because in [ADR 054: Protobuf Semver Compatible Codegen](https://github.com/shapeshift/cosmos-sdk/pull/11802), each module
 should use `internal` generated code which is not registered with the global protobuf registry, this code should provide
 an alternate way to register protobuf types with a type registry. In the same way that `.pb.go` files currently have a
 `var File_foo_proto protoreflect.FileDescriptor` for the file `foo.proto`, generated code should have a new member
@@ -225,10 +225,10 @@ package main
 import (
 	// Each go package which registers a module must be imported just for side-effects
 	// so that module implementations are registered.
-	_ "github.com/cosmos/cosmos-sdk/x/auth/module"
-	_ "github.com/cosmos/cosmos-sdk/x/bank/module"
-	_ "github.com/cosmos/cosmos-sdk/x/staking/module"
-	"github.com/cosmos/cosmos-sdk/core/app"
+	_ "github.com/shapeshift/cosmos-sdk/x/auth/module"
+	_ "github.com/shapeshift/cosmos-sdk/x/bank/module"
+	_ "github.com/shapeshift/cosmos-sdk/x/staking/module"
+	"github.com/shapeshift/cosmos-sdk/core/app"
 )
 
 // go:embed app.yaml
@@ -323,9 +323,9 @@ light of code generation. It may be better to do this type registration with a D
 
 ## References
 
-* https://github.com/cosmos/cosmos-sdk/blob/c3edbb22cab8678c35e21fe0253919996b780c01/simapp/app.go
+* https://github.com/shapeshift/cosmos-sdk/blob/c3edbb22cab8678c35e21fe0253919996b780c01/simapp/app.go
 * https://github.com/allinbits/cosmos-sdk-poc
 * https://github.com/uber-go/dig
 * https://github.com/google/wire
-* https://pkg.go.dev/github.com/cosmos/cosmos-sdk/container
-* https://github.com/cosmos/cosmos-sdk/pull/11802
+* https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/container
+* https://github.com/shapeshift/cosmos-sdk/pull/11802

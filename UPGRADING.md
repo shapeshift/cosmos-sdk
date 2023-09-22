@@ -2,7 +2,7 @@
 
 This guide provides instructions for upgrading to specific versions of Cosmos SDK.
 
-## [v0.47.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.0)
+## [v0.47.x](https://github.com/shapeshift/cosmos-sdk/releases/tag/v0.47.0)
 
 ### Migration to CometBFT (Part 1)
 
@@ -48,13 +48,13 @@ by this change.
 
 ### SimApp
 
-The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/testutil/sims) for application testing.
+The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/testutil/sims) for application testing.
 
 #### App Wiring
 
 SimApp's `app_v2.go` is using [App Wiring](https://docs.cosmos.network/main/building-apps/app-go-v2), the dependency injection framework of the Cosmos SDK.
-This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
-The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/simapp/app.go) and is not going anywhere.
+This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go).
+The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/simapp/app.go) and is not going anywhere.
 
 If you are using a `app.go` without dependency injection, add the following lines to your `app.go` in order to provide newer gRPC services:
 
@@ -90,7 +90,7 @@ That argument should be passed to the module maanager `ExportGenesisFromModules`
 The `GoLevelDB` version must pinned to `v1.0.1-0.20210819022825-2ae1ddf74ef7` in the application, following versions might cause unexpected behavior.
 This can be done adding `replace github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7` to the `go.mod` file.
 
-* [issue #14949 on cosmos-sdk](https://github.com/cosmos/cosmos-sdk/issues/14949)
+* [issue #14949 on cosmos-sdk](https://github.com/shapeshift/cosmos-sdk/issues/14949)
 * [issue #25413 on go-ethereum](https://github.com/ethereum/go-ethereum/pull/25413)
 
 ### Protobuf
@@ -112,7 +112,7 @@ For example, assuming you put all your proto files in subfolders inside your roo
 
 If you are using a custom folder structure for your proto files, please reorganize them so that their OS path matches their proto package name.
 
-This is to allow the proto FileDescriptSets to be correctly registered, and this standardized OS import paths allows [Hubl](https://github.com/cosmos/cosmos-sdk/tree/main/tools/hubl) to reflectively talk to any chain.
+This is to allow the proto FileDescriptSets to be correctly registered, and this standardized OS import paths allows [Hubl](https://github.com/shapeshift/cosmos-sdk/tree/main/tools/hubl) to reflectively talk to any chain.
 
 #### `{accepts,implements}_interface` proto annotations
 
@@ -173,7 +173,7 @@ In case a module does not follow the standard message path, (e.g. IBC), it is ad
 
 The `params` module was deprecated since v0.46. The Cosmos SDK has migrated away from `x/params` for its own modules.
 Cosmos SDK modules now store their parameters directly in its repective modules.
-The `params` module will be removed in `v0.48`, as mentioned [in v0.46 release](https://github.com/cosmos/cosmos-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.48`.
+The `params` module will be removed in `v0.48`, as mentioned [in v0.46 release](https://github.com/shapeshift/cosmos-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.48`.
 
 When performing a chain migration, the params table must be initizalied manually. This was done in the modules keepers in previous versions.
 Have a look at `simapp.RegisterUpgradeHandlers()` for an example.
@@ -209,10 +209,10 @@ The `Proposal` proto has been updated with proposer field. For proposal state mi
 
 ```go
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/module"
+	v4 "github.com/shapeshift/cosmos-sdk/x/gov/migrations/v4"
+	upgradetypes "github.com/shapeshift/cosmos-sdk/x/upgrade/types"
 )
 
 func (app SimApp) RegisterUpgradeHandlers() {

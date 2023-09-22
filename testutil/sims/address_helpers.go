@@ -7,12 +7,12 @@ import (
 	"strconv"
 
 	"cosmossdk.io/math"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/errors"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/errors"
+	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"
+	minttypes "github.com/shapeshift/cosmos-sdk/x/mint/types"
 )
 
 type GenerateAccountStrategy func(int) []sdk.AccAddress

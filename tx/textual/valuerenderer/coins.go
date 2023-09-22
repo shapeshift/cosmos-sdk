@@ -77,6 +77,6 @@ func (vr coinsValueRenderer) Format(ctx context.Context, v protoreflect.Value) (
 }
 
 func (vr coinsValueRenderer) Parse(_ context.Context, screens []Screen) (protoreflect.Value, error) {
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/13153
+	// ref: https://github.com/shapeshift/cosmos-sdk/issues/13153
 	panic("implement me, see #13153")
 }

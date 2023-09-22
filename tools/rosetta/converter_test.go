@@ -9,20 +9,20 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	authsigning "github.com/shapeshift/cosmos-sdk/x/auth/signing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/client"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
 
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/suite"
 
 	crgerrs "cosmossdk.io/tools/rosetta/lib/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	authtx "github.com/shapeshift/cosmos-sdk/x/auth/tx"
+	bank "github.com/shapeshift/cosmos-sdk/x/bank/types"
 )
 
 type ConverterTestSuite struct {

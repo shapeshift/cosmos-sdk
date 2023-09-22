@@ -143,7 +143,7 @@ bonded validator. The `SignedBlocksWindow` parameter defines the size
 The information stored for tracking validator liveness is as follows:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/slashing/v1beta1/slashing.proto#L13-L35
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/slashing/v1beta1/slashing.proto#L13-L35
 ```
 
 ### Params
@@ -154,7 +154,7 @@ it can be updated with governance or the address with authority.
 * Params: `0x00 | ProtocolBuffer(Params)`
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/slashing/v1beta1/slashing.proto#L37-L59
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/slashing/v1beta1/slashing.proto#L37-L59
 ```
 
 ## Messages
@@ -456,7 +456,7 @@ to keep track of the highest infraction amount for every single slashing period.
 
 > Note: Currently, according to the `slashing` module spec, a new slashing period
 > is created every time a validator is unbonded then rebonded. This should probably
-> be changed to jailed/unjailed. See issue [#3205](https://github.com/cosmos/cosmos-sdk/issues/3205)
+> be changed to jailed/unjailed. See issue [#3205](https://github.com/shapeshift/cosmos-sdk/issues/3205)
 > for further details. For the remainder of this, I will assume that we only start
 > a new slashing period when a validator gets unjailed.
 

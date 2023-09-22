@@ -9,8 +9,8 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 
 	"cosmossdk.io/errors"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormjson"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormjson"
 )
 
 func (m moduleDB) DefaultJSON(target ormjson.WriteTarget) error {

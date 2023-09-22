@@ -7,12 +7,12 @@ import (
 
 	"cosmossdk.io/math"
 
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	v3 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v3"
-	v1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
-	"github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/query"
+	v3 "github.com/shapeshift/cosmos-sdk/x/gov/migrations/v3"
+	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
+	"github.com/shapeshift/cosmos-sdk/x/gov/types/v1beta1"
 )
 
 func (suite *KeeperTestSuite) TestGRPCQueryProposal() {
@@ -76,7 +76,7 @@ func (suite *KeeperTestSuite) TestGRPCQueryProposal() {
 			if testCase.expPass {
 				suite.Require().NoError(err)
 				// Instead of using MashalJSON, we could compare .String() output too.
-				// https://github.com/cosmos/cosmos-sdk/issues/10965
+				// https://github.com/shapeshift/cosmos-sdk/issues/10965
 				expJSON, err := suite.cdc.MarshalJSON(&expProposal)
 				suite.Require().NoError(err)
 				actualJSON, err := suite.cdc.MarshalJSON(proposalRes.Proposal)
@@ -152,7 +152,7 @@ func (suite *KeeperTestSuite) TestLegacyGRPCQueryProposal() {
 			if testCase.expPass {
 				suite.Require().NoError(err)
 				// Instead of using MashalJSON, we could compare .String() output too.
-				// https://github.com/cosmos/cosmos-sdk/issues/10965
+				// https://github.com/shapeshift/cosmos-sdk/issues/10965
 				expJSON, err := suite.cdc.MarshalJSON(&expProposal)
 				suite.Require().NoError(err)
 				actualJSON, err := suite.cdc.MarshalJSON(&proposalRes.Proposal)
@@ -301,7 +301,7 @@ func (suite *KeeperTestSuite) TestGRPCQueryProposals() {
 				suite.Require().Len(proposals.GetProposals(), len(expRes.GetProposals()))
 				for i := 0; i < len(proposals.GetProposals()); i++ {
 					// Instead of using MashalJSON, we could compare .String() output too.
-					// https://github.com/cosmos/cosmos-sdk/issues/10965
+					// https://github.com/shapeshift/cosmos-sdk/issues/10965
 					expJSON, err := suite.cdc.MarshalJSON(expRes.GetProposals()[i])
 					suite.Require().NoError(err)
 					actualJSON, err := suite.cdc.MarshalJSON(proposals.GetProposals()[i])

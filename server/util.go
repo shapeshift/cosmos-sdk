@@ -27,17 +27,17 @@ import (
 	tmlog "github.com/cometbft/cometbft/libs/log"
 	tmtypes "github.com/cometbft/cometbft/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	serverlog "github.com/cosmos/cosmos-sdk/server/log"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/server/config"
+	serverlog "github.com/shapeshift/cosmos-sdk/server/log"
+	"github.com/shapeshift/cosmos-sdk/server/types"
+	"github.com/shapeshift/cosmos-sdk/snapshots"
+	snapshottypes "github.com/shapeshift/cosmos-sdk/snapshots/types"
+	"github.com/shapeshift/cosmos-sdk/store"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/mempool"
+	"github.com/shapeshift/cosmos-sdk/version"
 )
 
 // DONTCOVER

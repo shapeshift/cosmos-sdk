@@ -16,12 +16,12 @@ execution context.
 ## Registration
 
 Modules should define and register their custom errors in `x/{module}/errors.go`.
-Registration of errors is handled via the [`errors` package](https://github.com/cosmos/cosmos-sdk/blob/main/errors/errors.go).
+Registration of errors is handled via the [`errors` package](https://github.com/shapeshift/cosmos-sdk/blob/main/errors/errors.go).
 
 Example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/distribution/types/errors.go#L1-L21
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/distribution/types/errors.go#L1-L21
 ```
 
 Each custom module error must provide the codespace, which is typically the module name
@@ -32,7 +32,7 @@ necessarily have to be. The only restrictions on error codes are the following:
 * Must be greater than one, as a code value of one is reserved for internal errors.
 * Must be unique within the module.
 
-Note, the Cosmos SDK provides a core set of *common* errors. These errors are defined in [`types/errors/errors.go`](https://github.com/cosmos/cosmos-sdk/blob/main/types/errors/errors.go).
+Note, the Cosmos SDK provides a core set of *common* errors. These errors are defined in [`types/errors/errors.go`](https://github.com/shapeshift/cosmos-sdk/blob/main/types/errors/errors.go).
 
 ## Wrapping
 
@@ -43,7 +43,7 @@ execution.
 Example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/x/bank/keeper/keeper.go#L141-L182
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/bank/keeper/keeper.go#L141-L182
 ```
 
 Regardless if an error is wrapped or not, the Cosmos SDK's `errors` package provides a function to determine if

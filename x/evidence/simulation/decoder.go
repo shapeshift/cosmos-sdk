@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
-	"github.com/cosmos/cosmos-sdk/x/evidence/types"
+	"github.com/shapeshift/cosmos-sdk/types/kv"
+	"github.com/shapeshift/cosmos-sdk/x/evidence/exported"
+	"github.com/shapeshift/cosmos-sdk/x/evidence/types"
 )
 
 type EvidenceUnmarshaler interface {

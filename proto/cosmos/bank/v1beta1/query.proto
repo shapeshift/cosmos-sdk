@@ -10,7 +10,7 @@ import "cosmos_proto/cosmos.proto";
 import "cosmos/query/v1/query.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/bank/types";
+option go_package = "github.com/shapeshift/cosmos-sdk/x/bank/types";
 
 // Query defines the gRPC querier service.
 service Query {
@@ -152,7 +152,7 @@ message QueryAllBalancesResponse {
   repeated cosmos.base.v1beta1.Coin balances = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 
   // pagination defines the pagination in the response.
@@ -183,7 +183,7 @@ message QuerySpendableBalancesResponse {
   repeated cosmos.base.v1beta1.Coin balances = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 
   // pagination defines the pagination in the response.
@@ -234,7 +234,7 @@ message QueryTotalSupplyResponse {
   repeated cosmos.base.v1beta1.Coin supply = 1 [
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/shapeshift/cosmos-sdk/types.Coins"
   ];
 
   // pagination defines the pagination in the response.

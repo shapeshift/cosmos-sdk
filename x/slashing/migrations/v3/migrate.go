@@ -1,10 +1,10 @@
 package v3
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/exported"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/shapeshift/cosmos-sdk/codec"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/exported"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/types"
 )
 
 const (

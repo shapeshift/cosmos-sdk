@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ## Abstract
 
-`x/nft` is an implementation of a Cosmos SDK module, per [ADR 43](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-043-nft-module.md), that allows you to create nft classification, create nft, transfer nft, update nft, and support various queries by integrating the module. It is fully compatible with the ERC721 specification.
+`x/nft` is an implementation of a Cosmos SDK module, per [ADR 43](https://github.com/shapeshift/cosmos-sdk/blob/main/docs/architecture/adr-043-nft-module.md), that allows you to create nft classification, create nft, transfer nft, update nft, and support various queries by integrating the module. It is fully compatible with the ERC721 specification.
 
 * [Concept](#concepts)
     * [Class](#class)
@@ -22,7 +22,7 @@ sidebar_position: 1
 
 ### Class
 
-`x/nft` module defines a struct `Class` to describe the common characteristics of a class of nft, under this class, you can create a variety of nft, which is equivalent to an erc721 contract for Ethereum. The design is defined in the [ADR 043](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-043-nft-module.md).
+`x/nft` module defines a struct `Class` to describe the common characteristics of a class of nft, under this class, you can create a variety of nft, which is equivalent to an erc721 contract for Ethereum. The design is defined in the [ADR 043](https://github.com/shapeshift/cosmos-sdk/blob/main/docs/architecture/adr-043-nft-module.md).
 
 ### NFT
 

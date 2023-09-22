@@ -3,7 +3,7 @@ package v2
 import (
 	"encoding/binary"
 
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
 )
 
 // MigrateGenState accepts exported v0.46 x/auth genesis state and migrates it to

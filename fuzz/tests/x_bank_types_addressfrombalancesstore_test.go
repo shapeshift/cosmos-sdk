@@ -5,7 +5,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/shapeshift/cosmos-sdk/x/bank/types"
 )
 
 func FuzzXBankTypesAddressFromBalancesStore(f *testing.F) {

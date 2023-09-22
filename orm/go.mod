@@ -1,4 +1,4 @@
-module github.com/cosmos/cosmos-sdk/orm
+module github.com/shapeshift/cosmos-sdk/orm
 
 go 1.19
 

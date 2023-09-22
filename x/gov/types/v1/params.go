@@ -6,7 +6,7 @@ import (
 
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 // Default period for deposits & voting

@@ -6,9 +6,9 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"gotest.tools/v3/assert"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/encodeutil"
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testpb"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/encodeutil"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testpb"
 )
 
 var aFullName = (&testpb.ExampleTable{}).ProtoReflect().Descriptor().FullName()

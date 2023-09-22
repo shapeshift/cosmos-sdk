@@ -5,8 +5,8 @@ package keyring
 
 import (
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
-	hd "github.com/cosmos/cosmos-sdk/crypto/hd"
+	types "github.com/shapeshift/cosmos-sdk/codec/types"
+	hd "github.com/shapeshift/cosmos-sdk/crypto/hd"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/golang/protobuf/proto"
 	io "io"

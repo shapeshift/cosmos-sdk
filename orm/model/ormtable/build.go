@@ -3,9 +3,9 @@ package ormtable
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/orm/internal/fieldnames"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/fieldnames"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/encodeutil"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/encodeutil"
 
 	"google.golang.org/protobuf/reflect/protoregistry"
 
@@ -14,8 +14,8 @@ import (
 
 	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 )
 
 const (

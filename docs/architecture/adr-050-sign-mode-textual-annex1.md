@@ -21,8 +21,8 @@ Value Renderers describe how values of different Protobuf types should be encode
 
 - Applies to:
   - protobuf numeric integer types (`int{32,64}`, `uint{32,64}`, `sint{32,64}`, `fixed{32,64}`, `sfixed{32,64}`)
-  - strings whose `customtype` is `github.com/cosmos/cosmos-sdk/types.Int` or `github.com/cosmos/cosmos-sdk/types.Dec`
-  - bytes whose `customtype` is `github.com/cosmos/cosmos-sdk/types.Int` or `github.com/cosmos/cosmos-sdk/types.Dec`
+  - strings whose `customtype` is `github.com/shapeshift/cosmos-sdk/types.Int` or `github.com/shapeshift/cosmos-sdk/types.Dec`
+  - bytes whose `customtype` is `github.com/shapeshift/cosmos-sdk/types.Int` or `github.com/shapeshift/cosmos-sdk/types.Dec`
 - Trailing decimal zeroes are always removed
 - Formatting with `'`s for every three integral digits.
 - Usage of `.` to denote the decimal delimiter.
@@ -36,7 +36,7 @@ Value Renderers describe how values of different Protobuf types should be encode
 ### `coin`
 
 - Applies to `cosmos.base.v1beta1.Coin`.
-- Denoms are converted to `display` denoms using `Metadata` (if available). **This requires a state query**. The definition of `Metadata` can be found in the [bank Protobuf definition](https://github.com/cosmos/cosmos-sdk/blob/v0.46.0/proto/cosmos/bank/v1beta1/bank.proto#L79-L108). If the `display` field is empty or nil, then we do not perform any denom conversion.
+- Denoms are converted to `display` denoms using `Metadata` (if available). **This requires a state query**. The definition of `Metadata` can be found in the [bank Protobuf definition](https://github.com/shapeshift/cosmos-sdk/blob/v0.46.0/proto/cosmos/bank/v1beta1/bank.proto#L79-L108). If the `display` field is empty or nil, then we do not perform any denom conversion.
 - Amounts are converted to `display` denom amounts and rendered as `number`s above
   - We do not change the capitalization of the denom. In practice, `display` denoms are stored in lowercase in state (e.g. `10 atom`), however they are often showed in UPPERCASE in everyday life (e.g. `10 ATOM`). Value renderers keep the case used in state, but we may recommend chains changing the denom metadata to be uppercase for better user display.
 - One space between the denom and amount (e.g. `10 atom`).

@@ -30,7 +30,7 @@ const sidebars = {
         {
           type: "link",
           label: "SDK API Reference",
-          href: "https://pkg.go.dev/github.com/cosmos/cosmos-sdk",
+          href: "https://pkg.go.dev/github.com/shapeshift/cosmos-sdk",
         },
         {
           type: "link",

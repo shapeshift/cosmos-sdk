@@ -5,11 +5,11 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/store/cachekv"
+	"github.com/shapeshift/cosmos-sdk/store/dbadapter"
+	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
+	"github.com/shapeshift/cosmos-sdk/store/tracekv"
+	"github.com/shapeshift/cosmos-sdk/store/types"
 )
 
 var (

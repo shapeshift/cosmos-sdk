@@ -20,18 +20,18 @@ import (
 	"gotest.tools/v3/golden"
 	"pgregory.net/rapid"
 
-	"github.com/cosmos/cosmos-sdk/orm/types/kv"
+	"github.com/shapeshift/cosmos-sdk/orm/types/kv"
 
 	queryv1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
 	sdkerrors "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/orm/encoding/ormkv"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testkv"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testpb"
-	"github.com/cosmos/cosmos-sdk/orm/internal/testutil"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormlist"
-	"github.com/cosmos/cosmos-sdk/orm/model/ormtable"
-	"github.com/cosmos/cosmos-sdk/orm/types/ormerrors"
+	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testkv"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testpb"
+	"github.com/shapeshift/cosmos-sdk/orm/internal/testutil"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormlist"
+	"github.com/shapeshift/cosmos-sdk/orm/model/ormtable"
+	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 )
 
 func TestScenario(t *testing.T) {
@@ -69,7 +69,7 @@ func TestScenario(t *testing.T) {
 	checkEncodeDecodeEntries(t, table, store.IndexStoreReader())
 }
 
-// isolated test for bug - https://github.com/cosmos/cosmos-sdk/issues/11431
+// isolated test for bug - https://github.com/shapeshift/cosmos-sdk/issues/11431
 func TestPaginationLimitCountTotal(t *testing.T) {
 	table, err := ormtable.Build(ormtable.Options{
 		MessageType: (&testpb.ExampleTable{}).ProtoReflect().Type(),

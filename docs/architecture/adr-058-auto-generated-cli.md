@@ -28,7 +28,7 @@ tests with unit tests as there still needs to be some way to test these CLI comm
 
 ## Decision
 
-To make module development simpler, we provide infrastructure - in the new [`client/v2`](https://github.com/cosmos/cosmos-sdk/tree/main/client/v2)
+To make module development simpler, we provide infrastructure - in the new [`client/v2`](https://github.com/shapeshift/cosmos-sdk/tree/main/client/v2)
 go module - for automatically generating CLI commands based on protobuf definitions to either replace or complement
 handwritten CLI commands. This will mean that when developing a module, it will be possible to skip both writing and
 testing CLI commands as that can all be taken care of by the framework.
@@ -78,7 +78,7 @@ We would like to be able to customize:
 * aliases for flags (ex. `-a` for `--amount`)
 * which fields are positional parameters rather than flags
 
-It is an [open discussion](https://github.com/cosmos/cosmos-sdk/pull/11725#issuecomment-1108676129)
+It is an [open discussion](https://github.com/shapeshift/cosmos-sdk/pull/11725#issuecomment-1108676129)
 as to whether these customizations options should line in:
 * the .proto files themselves,
 * separate config files (ex. YAML), or
@@ -91,5 +91,5 @@ for a small subset of users.
 ## References
 
 * https://github.com/regen-network/regen-ledger/issues/1041
-* https://github.com/cosmos/cosmos-sdk/tree/main/client/v2
-* https://github.com/cosmos/cosmos-sdk/pull/11725#issuecomment-1108676129
+* https://github.com/shapeshift/cosmos-sdk/tree/main/client/v2
+* https://github.com/shapeshift/cosmos-sdk/pull/11725#issuecomment-1108676129

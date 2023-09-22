@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
 )
 
 func FuzzTypesDecSetString(f *testing.F) {

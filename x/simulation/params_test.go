@@ -8,8 +8,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
 )
 
 func TestLegacyParamChange(t *testing.T) {

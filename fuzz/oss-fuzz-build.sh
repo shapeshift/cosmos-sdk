@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-export FUZZ_ROOT="github.com/cosmos/cosmos-sdk"
+export FUZZ_ROOT="github.com/shapeshift/cosmos-sdk"
 
 build_go_fuzzer() {
 	local function="$1"

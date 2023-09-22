@@ -3,13 +3,13 @@ package tx
 import (
 	"github.com/cosmos/gogoproto/proto"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
+	"github.com/shapeshift/cosmos-sdk/types/tx"
+	"github.com/shapeshift/cosmos-sdk/types/tx/signing"
+	"github.com/shapeshift/cosmos-sdk/x/auth/migrations/legacytx"
 )
 
 // AuxTxBuilder is a client-side builder for creating an AuxSignerData.
@@ -196,7 +196,7 @@ func (b *AuxTxBuilder) GetSignBytes() ([]byte, error) {
 				// Aux signer never signs over fee.
 				// For LEGACY_AMINO_JSON, we use the convention to sign
 				// over empty fees.
-				// ref: https://github.com/cosmos/cosmos-sdk/pull/10348
+				// ref: https://github.com/shapeshift/cosmos-sdk/pull/10348
 				legacytx.StdFee{},
 				b.msgs, b.body.Memo, b.auxSignerData.SignDoc.Tip,
 			)

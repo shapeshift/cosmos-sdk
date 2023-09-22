@@ -6,8 +6,8 @@ package testdata
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
-	tx "github.com/cosmos/cosmos-sdk/types/tx"
+	types "github.com/shapeshift/cosmos-sdk/codec/types"
+	tx "github.com/shapeshift/cosmos-sdk/types/tx"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"

@@ -26,7 +26,7 @@ In the Cosmos SDK, `gas` is a special unit that is used to track the consumption
 In the Cosmos SDK, `gas` is a simple alias for `uint64`, and is managed by an object called a _gas meter_. Gas meters implement the `GasMeter` interface
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/store/types/gas.go#L40-L51
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/store/types/gas.go#L40-L51
 ```
 
 where:
@@ -75,18 +75,18 @@ ctx.BlockGasMeter().ConsumeGas(
 
 The `AnteHandler` is run for every transaction during `CheckTx` and `DeliverTx`, before a Protobuf `Msg` service method for each `sdk.Msg` in the transaction. 
 
-The anteHandler is not implemented in the core Cosmos SDK but in a module. That said, most applications today use the default implementation defined in the [`auth` module](https://github.com/cosmos/cosmos-sdk/tree/main/x/auth). Here is what the `anteHandler` is intended to do in a normal Cosmos SDK application:
+The anteHandler is not implemented in the core Cosmos SDK but in a module. That said, most applications today use the default implementation defined in the [`auth` module](https://github.com/shapeshift/cosmos-sdk/tree/main/x/auth). Here is what the `anteHandler` is intended to do in a normal Cosmos SDK application:
 
 * Verify that the transactions are of the correct type. Transaction types are defined in the module that implements the `anteHandler`, and they follow the transaction interface:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/types/tx_msg.go#L42-L50
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/types/tx_msg.go#L42-L50
 ```
 
   This enables developers to play with various types for the transaction of their application. In the default `auth` module, the default transaction type is `Tx`: 
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/tx/v1beta1/tx.proto#L13-L26
+https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/proto/cosmos/tx/v1beta1/tx.proto#L13-L26
 ```
 
 * Verify signatures for each [`message`](../building-modules/02-messages-and-queries.md#messages) contained in the transaction. Each `message` should be signed by one or multiple sender(s), and these signatures must be verified in the `anteHandler`.

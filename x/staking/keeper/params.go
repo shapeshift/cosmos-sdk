@@ -5,8 +5,8 @@ import (
 
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 // UnbondingTime - The time duration for unbonding
@@ -39,7 +39,7 @@ func (k Keeper) BondDenom(ctx sdk.Context) string {
 // PowerReduction - is the amount of staking tokens required for 1 unit of consensus-engine power.
 // Currently, this returns a global variable that the app developer can tweak.
 // TODO: we might turn this into an on-chain param:
-// https://github.com/cosmos/cosmos-sdk/issues/8365
+// https://github.com/shapeshift/cosmos-sdk/issues/8365
 func (k Keeper) PowerReduction(ctx sdk.Context) math.Int {
 	return sdk.DefaultPowerReduction
 }

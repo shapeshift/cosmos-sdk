@@ -3,10 +3,10 @@ package keeper
 import (
 	"bytes"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/x/nft"
+	"github.com/shapeshift/cosmos-sdk/internal/conv"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/address"
+	"github.com/shapeshift/cosmos-sdk/x/nft"
 )
 
 var (

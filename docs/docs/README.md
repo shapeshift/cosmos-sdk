@@ -33,5 +33,5 @@ Check out the docs for the various parts of the Cosmos stack.
 ## Help & Support
 
 * [**Discord**](https://discord.gg/cosmosnetwork) - Chat with Cosmos developers on Discord.
-* [**GitHub Discussions**](https://github.com/cosmos/cosmos-sdk/discussions) - Ask questions and discuss SDK development on GitHub.
-* [**Found an issue?**](https://github.com/cosmos/cosmos-sdk/edit/main/docs/docs/README.md) - Help us improve this page by suggesting edits on GitHub.
+* [**GitHub Discussions**](https://github.com/shapeshift/cosmos-sdk/discussions) - Ask questions and discuss SDK development on GitHub.
+* [**Found an issue?**](https://github.com/shapeshift/cosmos-sdk/edit/main/docs/docs/README.md) - Help us improve this page by suggesting edits on GitHub.

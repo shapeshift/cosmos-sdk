@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --global user.name "${{ github.actor }}" # Config have to be set for pushing the cherry-picked changes onto fork pr-patch branch.
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git remote add upstream https://github.com/cosmos/cosmos-sdk.git
+          git remote add upstream https://github.com/shapeshift/cosmos-sdk.git
           git fetch --all  # Get the latest code
           git checkout -b $PR_NAME upstream/main    # Create new branch based on main branch
           git cherry-pick -X theirs ${{ github.sha }} # Cherry pick the latest commit of PR

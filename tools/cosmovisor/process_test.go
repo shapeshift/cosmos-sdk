@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/tools/cosmovisor"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	upgradetypes "github.com/shapeshift/cosmos-sdk/x/upgrade/types"
 )
 
 type processTestSuite struct {

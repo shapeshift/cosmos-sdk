@@ -8,17 +8,17 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingkeeper "github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtestutil "github.com/cosmos/cosmos-sdk/x/staking/testutil"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/slashing"
+	slashingkeeper "github.com/shapeshift/cosmos-sdk/x/slashing/keeper"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/testutil"
+	"github.com/shapeshift/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/shapeshift/cosmos-sdk/x/staking/keeper"
+	stakingtestutil "github.com/shapeshift/cosmos-sdk/x/staking/testutil"
+	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

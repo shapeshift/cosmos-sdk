@@ -11,14 +11,14 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/cli"
-	distrclitestutil "github.com/cosmos/cosmos-sdk/x/distribution/client/testutil"
-	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/shapeshift/cosmos-sdk/client/flags"
+	clitestutil "github.com/shapeshift/cosmos-sdk/testutil/cli"
+	"github.com/shapeshift/cosmos-sdk/testutil/network"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/x/distribution/client/cli"
+	distrclitestutil "github.com/shapeshift/cosmos-sdk/x/distribution/client/testutil"
+	distrtypes "github.com/shapeshift/cosmos-sdk/x/distribution/types"
+	minttypes "github.com/shapeshift/cosmos-sdk/x/mint/types"
 )
 
 type E2ETestSuite struct {

@@ -6,7 +6,7 @@ package types
 import (
 	fmt "fmt"
 	types1 "github.com/cometbft/cometbft/abci/types"
-	types "github.com/cosmos/cosmos-sdk/codec/types"
+	types "github.com/shapeshift/cosmos-sdk/codec/types"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"

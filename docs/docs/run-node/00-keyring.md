@@ -116,7 +116,7 @@ You can set the keyring-backend using env variable: `BINNAME_KEYRING_BACKEND`. F
 Make sure you can build your own binary, and replace `simd` with the name of your binary in the snippets.
 :::
 
-Applications developed using the Cosmos SDK come with the `keys` subcommand. For the purpose of this tutorial, we're running the `simd` CLI, which is an application built using the Cosmos SDK for testing and educational purposes. For more information, see [`simapp`](https://github.com/cosmos/cosmos-sdk/tree/main/simapp).
+Applications developed using the Cosmos SDK come with the `keys` subcommand. For the purpose of this tutorial, we're running the `simd` CLI, which is an application built using the Cosmos SDK for testing and educational purposes. For more information, see [`simapp`](https://github.com/shapeshift/cosmos-sdk/tree/main/simapp).
 
 You can use `simd keys` for help about the keys command and `simd keys [command] --help` for more information about a particular subcommand.
 

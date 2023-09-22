@@ -6,13 +6,13 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/snapshots"
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store"
-	pruningtypes "github.com/cosmos/cosmos-sdk/store/pruning/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
+	"github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/snapshots"
+	snapshottypes "github.com/shapeshift/cosmos-sdk/snapshots/types"
+	"github.com/shapeshift/cosmos-sdk/store"
+	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/mempool"
 )
 
 // File for storing in-package BaseApp optional functions,
@@ -264,7 +264,7 @@ func (app *BaseApp) SetTxEncoder(txEncoder sdk.TxEncoder) {
 
 // SetQueryMultiStore set a alternative MultiStore implementation to support grpc query service.
 //
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/13317
+// Ref: https://github.com/shapeshift/cosmos-sdk/issues/13317
 func (app *BaseApp) SetQueryMultiStore(ms sdk.MultiStore) {
 	app.qms = ms
 }

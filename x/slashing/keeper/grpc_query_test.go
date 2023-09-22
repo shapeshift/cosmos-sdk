@@ -4,10 +4,10 @@ import (
 	gocontext "context"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testutil"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
+	sdk "github.com/shapeshift/cosmos-sdk/types"
+	"github.com/shapeshift/cosmos-sdk/types/query"
+	"github.com/shapeshift/cosmos-sdk/x/slashing/testutil"
+	slashingtypes "github.com/shapeshift/cosmos-sdk/x/slashing/types"
 )
 
 func (s *KeeperTestSuite) TestGRPCQueryParams() {

@@ -48,7 +48,7 @@ func TestCoinsJsonTestcases(t *testing.T) {
 			}
 
 			// TODO Add parsing tests
-			// https://github.com/cosmos/cosmos-sdk/issues/13153
+			// https://github.com/shapeshift/cosmos-sdk/issues/13153
 		})
 	}
 }

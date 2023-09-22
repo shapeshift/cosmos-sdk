@@ -42,4 +42,4 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* [#13583](https://github.com/cosmos/cosmos-sdk/pull/13583) Extract rosetta to its own go.mod.
+* [#13583](https://github.com/shapeshift/cosmos-sdk/pull/13583) Extract rosetta to its own go.mod.

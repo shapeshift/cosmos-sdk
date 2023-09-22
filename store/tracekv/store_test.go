@@ -10,10 +10,10 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/shapeshift/cosmos-sdk/store/dbadapter"
+	"github.com/shapeshift/cosmos-sdk/store/prefix"
+	"github.com/shapeshift/cosmos-sdk/store/tracekv"
+	"github.com/shapeshift/cosmos-sdk/store/types"
 )
 
 func bz(s string) []byte { return []byte(s) }
