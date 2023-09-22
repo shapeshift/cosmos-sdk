@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/x/feegrant"

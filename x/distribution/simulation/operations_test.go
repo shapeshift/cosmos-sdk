@@ -4,9 +4,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/client"

@@ -2,8 +2,8 @@
 package modulev1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	_ "cosmossdk.io/api/cosmos/app/v1alpha1"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
+	_ "github.com/shapeshift/cosmos-sdk/api/cosmos/app/v1alpha1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

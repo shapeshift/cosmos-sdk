@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/tools/cosmovisor"
+	"github.com/shapeshift/cosmos-sdk/tools/cosmovisor"
 )
 
 type InitTestSuite struct {

@@ -3,7 +3,7 @@
 package testutil
 
 import (
-	math "cosmossdk.io/math"
+	math "github.com/shapeshift/cosmos-sdk/math"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"

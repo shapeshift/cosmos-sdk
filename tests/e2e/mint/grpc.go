@@ -3,7 +3,7 @@ package mint
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	grpctypes "github.com/shapeshift/cosmos-sdk/types/grpc"

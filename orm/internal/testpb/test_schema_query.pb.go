@@ -9,7 +9,7 @@
 package testpb
 
 import (
-	v1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/query/v1beta1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"

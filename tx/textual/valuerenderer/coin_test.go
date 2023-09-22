@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	basev1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
-	"cosmossdk.io/tx/textual/valuerenderer"
+	bankv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
+	basev1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/tx/textual/valuerenderer"
 )
 
 // mockCoinMetadataKey is used in the mock coin metadata querier.

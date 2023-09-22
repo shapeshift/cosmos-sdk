@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 	"github.com/golang/mock/gomock"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/testutil"

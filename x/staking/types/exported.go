@@ -1,8 +1,8 @@
 package types
 
 import (
-	"cosmossdk.io/math"
 	tmprotocrypto "github.com/cometbft/cometbft/proto/tendermint/crypto"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

@@ -1,14 +1,14 @@
 package errors
 
 import (
-	errorsmod "cosmossdk.io/errors"
+	errorsmod "github.com/shapeshift/cosmos-sdk/errors"
 )
 
 // Type Aliases to errors module
 //
 // Deprecated: functionality of this package has been moved to it's own module:
 //
-//	cosmossdk.io/errors
+//	github.com/shapeshift/cosmos-sdk/errors
 //
 // Please use the above module instead of this package.
 var (
@@ -28,7 +28,7 @@ var (
 
 // Error type alias for errorsmod.Error
 //
-// Deprecated: the type has been moved to cosmossdk.io/errors
+// Deprecated: the type has been moved to github.com/shapeshift/cosmos-sdk/errors
 // module. Please use the above module instead of this package.
 type Error = errorsmod.Error
 

@@ -20,12 +20,12 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"cosmossdk.io/log"
 	dbm "github.com/cometbft/cometbft-db"
 	tmcmd "github.com/cometbft/cometbft/cmd/cometbft/commands"
 	tmcfg "github.com/cometbft/cometbft/config"
 	tmlog "github.com/cometbft/cometbft/libs/log"
 	tmtypes "github.com/cometbft/cometbft/types"
+	"github.com/shapeshift/cosmos-sdk/log"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client/flags"

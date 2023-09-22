@@ -2,7 +2,7 @@
 package testpb
 
 import (
-	v1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
 	binary "encoding/binary"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"

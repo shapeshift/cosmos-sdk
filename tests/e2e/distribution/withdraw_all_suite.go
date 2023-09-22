@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/client/flags"

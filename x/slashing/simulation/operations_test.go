@@ -11,7 +11,7 @@ import (
 	tmtypes "github.com/cometbft/cometbft/types"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"

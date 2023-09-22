@@ -17,9 +17,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	"github.com/shapeshift/cosmos-sdk/client/tx"
@@ -28,6 +27,7 @@ import (
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
 	"github.com/shapeshift/cosmos-sdk/server"
 	srvconfig "github.com/shapeshift/cosmos-sdk/server/config"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	"github.com/shapeshift/cosmos-sdk/testutil/network"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

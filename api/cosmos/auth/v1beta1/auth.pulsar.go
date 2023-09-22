@@ -2,7 +2,7 @@
 package authv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

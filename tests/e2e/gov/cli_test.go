@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 
 	"github.com/shapeshift/cosmos-sdk/testutil/network"
 	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"

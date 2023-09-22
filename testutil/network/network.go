@@ -22,13 +22,13 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 
-	"cosmossdk.io/math"
 	tmlog "github.com/cometbft/cometbft/libs/log"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client"

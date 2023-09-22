@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/golang/mock/gomock"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/require"
 
 	"github.com/shapeshift/cosmos-sdk/testutil"

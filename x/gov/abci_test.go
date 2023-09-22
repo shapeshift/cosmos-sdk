@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/require"
 
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"

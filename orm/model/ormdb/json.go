@@ -8,7 +8,7 @@ import (
 	"golang.org/x/exp/maps"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"cosmossdk.io/errors"
+	"github.com/shapeshift/cosmos-sdk/errors"
 	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"
 	"github.com/shapeshift/cosmos-sdk/orm/types/ormjson"
 )

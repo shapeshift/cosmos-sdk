@@ -3,8 +3,8 @@ package staking_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/x/staking"
 	"github.com/shapeshift/cosmos-sdk/x/staking/testutil"

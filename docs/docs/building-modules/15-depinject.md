@@ -108,7 +108,7 @@ All methods, structs and their fields must be public for `depinject`.
   https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/x/group/module/module.go#L225-L235
   ```
 
-The `ProvideModule` function should return an instance of `cosmossdk.io/core/appmodule.AppModule` which implements
+The `ProvideModule` function should return an instance of `github.com/shapeshift/cosmos-sdk/core/appmodule.AppModule` which implements
 one or more app module extension interfaces for initializing the module.
 
 Following is the complete app wiring configuration for `group`:

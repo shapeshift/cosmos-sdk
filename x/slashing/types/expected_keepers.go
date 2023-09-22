@@ -1,7 +1,7 @@
 package types
 
 import (
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	auth "github.com/shapeshift/cosmos-sdk/x/auth/types"
 	paramtypes "github.com/shapeshift/cosmos-sdk/x/params/types"

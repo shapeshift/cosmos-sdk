@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 

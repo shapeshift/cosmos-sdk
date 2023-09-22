@@ -7,7 +7,7 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/codec"
@@ -15,8 +15,8 @@ import (
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/types/module"
 
-	modulev1 "cosmossdk.io/api/cosmos/vesting/module/v1"
-	"cosmossdk.io/core/appmodule"
+	modulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/vesting/module/v1"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
 
 	"github.com/shapeshift/cosmos-sdk/x/auth/keeper"
 	"github.com/shapeshift/cosmos-sdk/x/auth/vesting/client/cli"

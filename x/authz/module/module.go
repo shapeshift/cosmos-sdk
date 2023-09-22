@@ -9,10 +9,10 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	modulev1 "cosmossdk.io/api/cosmos/authz/module/v1"
-	"cosmossdk.io/core/appmodule"
+	modulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/authz/module/v1"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	sdkclient "github.com/shapeshift/cosmos-sdk/client"

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/simapp"
 	dbm "github.com/cometbft/cometbft-db"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/cometbft/cometbft/libs/log"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	"github.com/stretchr/testify/require"
 )

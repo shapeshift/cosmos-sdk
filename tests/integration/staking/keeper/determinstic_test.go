@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 	"pgregory.net/rapid"
 

@@ -1,7 +1,7 @@
 package nft
 
 import (
-	"cosmossdk.io/errors"
+	"github.com/shapeshift/cosmos-sdk/errors"
 )
 
 // x/nft module sentinel errors

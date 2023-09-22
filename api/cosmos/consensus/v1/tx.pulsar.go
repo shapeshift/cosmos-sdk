@@ -2,8 +2,8 @@
 package consensusv1
 
 import (
-	_ "cosmossdk.io/api/cosmos/msg/v1"
-	types "cosmossdk.io/api/tendermint/types"
+	_ "github.com/shapeshift/cosmos-sdk/api/cosmos/msg/v1"
+	types "github.com/shapeshift/cosmos-sdk/api/tendermint/types"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

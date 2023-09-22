@@ -3,8 +3,8 @@ module github.com/shapeshift/cosmos-sdk/orm
 go 1.19
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/errors v1.0.0
+	github.com/shapeshift/cosmos-sdk/api v0.3.1
+	github.com/shapeshift/cosmos-sdk/errors v1.0.0
 	github.com/cometbft/cometbft-db v0.7.0
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
 	github.com/golang/mock v1.6.0

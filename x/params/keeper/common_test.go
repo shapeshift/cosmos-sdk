@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
 	sdktestutil "github.com/shapeshift/cosmos-sdk/testutil"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

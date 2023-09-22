@@ -1,6 +1,6 @@
 package appmodule
 
-import "cosmossdk.io/depinject"
+import "github.com/shapeshift/cosmos-sdk/depinject"
 
 // AppModule is a tag interface for app module implementations to use as a basis
 // for extension interfaces. It provides no functionality itself, but is the

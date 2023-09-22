@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 )
 

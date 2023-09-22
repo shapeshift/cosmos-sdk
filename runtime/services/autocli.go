@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
+	autocliv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/autocli/v1"
 	"google.golang.org/grpc"
 
 	"github.com/shapeshift/cosmos-sdk/types/module"

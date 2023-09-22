@@ -10,13 +10,13 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
-	"cosmossdk.io/core/appconfig"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/core/internal"
-	"cosmossdk.io/core/internal/testpb"
-	_ "cosmossdk.io/core/internal/testpb"
+	"github.com/shapeshift/cosmos-sdk/core/appconfig"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
+	"github.com/shapeshift/cosmos-sdk/core/internal"
+	"github.com/shapeshift/cosmos-sdk/core/internal/testpb"
+	_ "github.com/shapeshift/cosmos-sdk/core/internal/testpb"
 )
 
 func expectContainerErrorContains(t *testing.T, option depinject.Config, contains string) {
@@ -56,7 +56,7 @@ modules:
   config:
     "@type": testpb.TestUnregisteredModule
 `))
-	expectContainerErrorContains(t, opt, "did you forget to import cosmossdk.io/core/internal/testpb")
+	expectContainerErrorContains(t, opt, "did you forget to import github.com/shapeshift/cosmos-sdk/core/internal/testpb")
 	expectContainerErrorContains(t, opt, "registered modules are")
 	expectContainerErrorContains(t, opt, "testpb.TestModuleA")
 

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	tmprotocrypto "github.com/cometbft/cometbft/proto/tendermint/crypto"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"sigs.k8s.io/yaml"
 
 	"github.com/shapeshift/cosmos-sdk/codec"

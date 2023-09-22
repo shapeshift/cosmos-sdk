@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	errorsmod "cosmossdk.io/errors"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
+	errorsmod "github.com/shapeshift/cosmos-sdk/errors"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
 	"github.com/shapeshift/cosmos-sdk/x/group"

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

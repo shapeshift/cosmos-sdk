@@ -3,8 +3,8 @@ package testutil
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/x/distribution/keeper"
 	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"

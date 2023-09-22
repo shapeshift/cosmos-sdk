@@ -1,9 +1,9 @@
-module cosmossdk.io/tools/rosetta
+module github.com/shapeshift/cosmos-sdk/tools/rosetta
 
 go 1.19
 
 require (
-	cosmossdk.io/math v1.1.2
+	github.com/shapeshift/cosmos-sdk/math v1.1.2
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2
 	github.com/coinbase/rosetta-sdk-go/types v1.0.0
 	github.com/cometbft/cometbft v0.37.2
@@ -16,10 +16,10 @@ require (
 )
 
 require (
-	cosmossdk.io/api v0.3.1 // indirect
-	cosmossdk.io/core v0.3.2 // indirect
-	cosmossdk.io/depinject v1.0.0-alpha.4 // indirect
-	cosmossdk.io/errors v1.0.0 // indirect
+	github.com/shapeshift/cosmos-sdk/api v0.3.1 // indirect
+	github.com/shapeshift/cosmos-sdk/core v0.3.2 // indirect
+	github.com/shapeshift/cosmos-sdk/depinject v1.0.0-alpha.4 // indirect
+	github.com/shapeshift/cosmos-sdk/errors v1.0.0 // indirect
 	filippo.io/edwards25519 v1.0.0 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/99designs/keyring v1.2.1 // indirect

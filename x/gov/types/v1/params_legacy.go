@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	paramtypes "github.com/shapeshift/cosmos-sdk/x/params/types"
 )

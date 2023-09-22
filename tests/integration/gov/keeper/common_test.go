@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

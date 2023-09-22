@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/x/distribution/types"

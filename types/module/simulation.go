@@ -6,7 +6,7 @@ import (
 	"sort"
 	"time"
 
-	sdkmath "cosmossdk.io/math"
+	sdkmath "github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/codec"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

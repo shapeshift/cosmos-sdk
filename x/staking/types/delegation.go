@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"sigs.k8s.io/yaml"
 )

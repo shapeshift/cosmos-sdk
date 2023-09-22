@@ -3,9 +3,9 @@ package ante_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/golang/mock/gomock"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"

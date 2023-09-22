@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	basev1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
-	"cosmossdk.io/core/coins"
+	bankv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
+	basev1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/core/coins"
 	"github.com/stretchr/testify/require"
 )
 

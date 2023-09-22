@@ -9,9 +9,9 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	basev1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
 	cosmos_proto "github.com/cosmos/cosmos-proto"
+	bankv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
+	basev1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
 )
 
 // CoinMetadataQueryFn defines a function that queries state for the coin denom

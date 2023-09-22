@@ -1,11 +1,11 @@
-module cosmossdk.io/tx
+module github.com/shapeshift/cosmos-sdk/tx
 
 go 1.19
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/core v0.3.2
-	cosmossdk.io/math v1.1.2
+	github.com/shapeshift/cosmos-sdk/api v0.3.1
+	github.com/shapeshift/cosmos-sdk/core v0.3.2
+	github.com/shapeshift/cosmos-sdk/math v1.1.2
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
 	github.com/stretchr/testify v1.8.4
 	google.golang.org/protobuf v1.30.0
@@ -27,4 +27,4 @@ require (
 )
 
 // temporary until we tag a new go module
-replace cosmossdk.io/core => ../core
+replace github.com/shapeshift/cosmos-sdk/core => ../core

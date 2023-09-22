@@ -7,7 +7,7 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

@@ -10,7 +10,7 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client/flags"

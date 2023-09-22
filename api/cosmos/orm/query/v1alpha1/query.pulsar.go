@@ -2,7 +2,7 @@
 package queryv1alpha1
 
 import (
-	v1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/query/v1beta1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

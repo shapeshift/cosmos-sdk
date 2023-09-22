@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"cosmossdk.io/tx/textual/valuerenderer"
+	"github.com/shapeshift/cosmos-sdk/tx/textual/valuerenderer"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/require"
 
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"

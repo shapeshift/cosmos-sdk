@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	"github.com/golang/mock/gomock"
+	"github.com/shapeshift/cosmos-sdk/math"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	banktestutil "github.com/shapeshift/cosmos-sdk/x/bank/testutil"

@@ -6,7 +6,7 @@ import (
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/types/dynamicpb"
 
-	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
+	ormv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/orm/v1"
 
 	"github.com/shapeshift/cosmos-sdk/orm/model/ormtable"
 )

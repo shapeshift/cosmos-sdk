@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/cometbft/cometbft/libs/log"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/codec"
 	storetypes "github.com/shapeshift/cosmos-sdk/store/types"

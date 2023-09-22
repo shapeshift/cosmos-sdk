@@ -3,13 +3,13 @@ package flag
 import (
 	"context"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	cosmos_proto "github.com/cosmos/cosmos-proto"
+	autocliv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/autocli/v1"
 	"github.com/spf13/pflag"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"cosmossdk.io/client/v2/internal/util"
+	"github.com/shapeshift/cosmos-sdk/client/v2/internal/util"
 )
 
 // namingOptions specifies internal naming options for flags.

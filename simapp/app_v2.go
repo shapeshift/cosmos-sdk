@@ -11,7 +11,7 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/cometbft/cometbft/libs/log"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client"

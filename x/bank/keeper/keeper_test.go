@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 	"github.com/golang/mock/gomock"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"

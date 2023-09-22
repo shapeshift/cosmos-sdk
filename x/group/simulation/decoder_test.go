@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	"github.com/shapeshift/cosmos-sdk/types/kv"
 	"github.com/shapeshift/cosmos-sdk/x/group"

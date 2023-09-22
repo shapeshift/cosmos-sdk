@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
+	autocliv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/autocli/v1"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -15,7 +15,7 @@ import (
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
 
-	"cosmossdk.io/client/v2/internal/testpb"
+	"github.com/shapeshift/cosmos-sdk/client/v2/internal/testpb"
 )
 
 var testCmdDesc = &autocliv1.ServiceCommandDescriptor{

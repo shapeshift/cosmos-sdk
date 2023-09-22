@@ -1,9 +1,9 @@
 package types
 
 import (
-	"cosmossdk.io/math"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
 )

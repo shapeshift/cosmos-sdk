@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/math"
 	abci "github.com/cometbft/cometbft/abci/types"
 	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/client"

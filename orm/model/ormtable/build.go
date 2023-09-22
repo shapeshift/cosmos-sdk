@@ -12,7 +12,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
+	ormv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/orm/v1"
 
 	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
 	"github.com/shapeshift/cosmos-sdk/orm/types/ormerrors"

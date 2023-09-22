@@ -6,7 +6,7 @@ package client
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/shapeshift/cosmos-sdk/testutil/network"
 
 	"github.com/stretchr/testify/suite"

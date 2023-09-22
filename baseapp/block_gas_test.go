@@ -13,7 +13,7 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	baseapptestutil "github.com/shapeshift/cosmos-sdk/baseapp/testutil"
 	"github.com/shapeshift/cosmos-sdk/client"

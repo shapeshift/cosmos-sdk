@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"

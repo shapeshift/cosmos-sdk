@@ -5,13 +5,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	_ "cosmossdk.io/api/cosmos/bank/v1beta1"
-	"cosmossdk.io/depinject"
+	_ "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
 	clienttestutil "github.com/shapeshift/cosmos-sdk/client/testutil"
 	"github.com/shapeshift/cosmos-sdk/client/tx"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	typestx "github.com/shapeshift/cosmos-sdk/types/tx"

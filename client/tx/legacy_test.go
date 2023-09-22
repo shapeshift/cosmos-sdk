@@ -6,12 +6,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/client"
 	clienttestutil "github.com/shapeshift/cosmos-sdk/client/testutil"
 	tx2 "github.com/shapeshift/cosmos-sdk/client/tx"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	"github.com/shapeshift/cosmos-sdk/types"
 	typestx "github.com/shapeshift/cosmos-sdk/types/tx"

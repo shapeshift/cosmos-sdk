@@ -8,9 +8,9 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	"github.com/shapeshift/cosmos-sdk/testutil/sims"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

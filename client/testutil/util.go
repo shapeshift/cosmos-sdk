@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	"cosmossdk.io/core/appconfig"
-	"cosmossdk.io/depinject"
+	runtimev1alpha1 "github.com/shapeshift/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/shapeshift/cosmos-sdk/api/cosmos/app/v1alpha1"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/core/appconfig"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	_ "github.com/shapeshift/cosmos-sdk/runtime"
 )
 

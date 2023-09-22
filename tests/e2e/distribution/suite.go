@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/simapp"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/shapeshift/cosmos-sdk/math"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/client/flags"

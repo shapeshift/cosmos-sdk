@@ -11,7 +11,7 @@ import (
 
 	"github.com/coinbase/rosetta-sdk-go/types"
 
-	"cosmossdk.io/tools/rosetta/lib/errors"
+	"github.com/shapeshift/cosmos-sdk/tools/rosetta/lib/errors"
 )
 
 // ConstructionCombine Combine creates a network-specific transaction from an unsigned transaction

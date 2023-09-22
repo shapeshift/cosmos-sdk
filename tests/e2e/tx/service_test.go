@@ -10,7 +10,6 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	clienttx "github.com/shapeshift/cosmos-sdk/client/tx"
@@ -18,6 +17,7 @@ import (
 	"github.com/shapeshift/cosmos-sdk/crypto/keyring"
 	kmultisig "github.com/shapeshift/cosmos-sdk/crypto/keys/multisig"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	"github.com/shapeshift/cosmos-sdk/testutil/cli"
 	"github.com/shapeshift/cosmos-sdk/testutil/network"

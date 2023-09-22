@@ -1,10 +1,10 @@
-module cosmossdk.io/client/v2
+module github.com/shapeshift/cosmos-sdk/client/v2
 
 go 1.19
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/core v0.3.2
+	github.com/shapeshift/cosmos-sdk/api v0.3.1
+	github.com/shapeshift/cosmos-sdk/core v0.3.2
 	github.com/cosmos/cosmos-proto v1.0.0-beta.2
 	github.com/iancoleman/strcase v0.2.0
 	github.com/spf13/cobra v1.6.1
@@ -15,7 +15,7 @@ require (
 )
 
 require (
-	cosmossdk.io/depinject v1.0.0-alpha.4 // indirect
+	github.com/shapeshift/cosmos-sdk/depinject v1.0.0-alpha.4 // indirect
 	github.com/cockroachdb/errors v1.10.0 // indirect
 	github.com/cockroachdb/logtags v0.0.0-20230118201751-21c54148d20b // indirect
 	github.com/cockroachdb/redact v1.1.5 // indirect

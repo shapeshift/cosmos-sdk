@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/types/errors"
 	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"

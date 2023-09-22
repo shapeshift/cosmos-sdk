@@ -10,9 +10,9 @@ import (
 	"github.com/cometbft/cometbft/libs/log"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/runtime"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	testdata_pulsar "github.com/shapeshift/cosmos-sdk/testutil/testdata/testpb"

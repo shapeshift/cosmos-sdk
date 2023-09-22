@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/json"
 
-	modulev1 "cosmossdk.io/api/cosmos/consensus/module/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
 	abci "github.com/cometbft/cometbft/abci/types"
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
+	modulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/consensus/module/v1"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/spf13/cobra"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"

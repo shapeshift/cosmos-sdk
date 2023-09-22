@@ -4,7 +4,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	queryv1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
+	queryv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/query/v1beta1"
 	"github.com/shapeshift/cosmos-sdk/orm/encoding/encodeutil"
 	"github.com/shapeshift/cosmos-sdk/orm/encoding/ormkv"
 	"github.com/shapeshift/cosmos-sdk/orm/internal/listinternal"

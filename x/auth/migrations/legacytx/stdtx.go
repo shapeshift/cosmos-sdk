@@ -1,10 +1,10 @@
 package legacytx
 
 import (
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/codec/legacy"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
 	"github.com/shapeshift/cosmos-sdk/types/tx"

@@ -3,7 +3,7 @@ package valuerenderer
 import (
 	"context"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

@@ -2,7 +2,7 @@
 package keyringv1
 
 import (
-	v1 "cosmossdk.io/api/cosmos/crypto/hd/v1"
+	v1 "github.com/shapeshift/cosmos-sdk/api/cosmos/crypto/hd/v1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

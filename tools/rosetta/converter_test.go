@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"cosmossdk.io/tools/rosetta"
+	"github.com/shapeshift/cosmos-sdk/tools/rosetta"
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
@@ -18,7 +18,7 @@ import (
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/suite"
 
-	crgerrs "cosmossdk.io/tools/rosetta/lib/errors"
+	crgerrs "github.com/shapeshift/cosmos-sdk/tools/rosetta/lib/errors"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	authtx "github.com/shapeshift/cosmos-sdk/x/auth/tx"

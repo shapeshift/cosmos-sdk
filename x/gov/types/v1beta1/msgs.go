@@ -3,8 +3,8 @@ package v1beta1
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"sigs.k8s.io/yaml"
 
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"

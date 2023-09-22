@@ -1,4 +1,4 @@
-module cosmossdk.io/api
+module github.com/shapeshift/cosmos-sdk/api
 
 go 1.19
 

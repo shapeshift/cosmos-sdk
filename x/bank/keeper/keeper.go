@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	"github.com/shapeshift/cosmos-sdk/internal/conv"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/store/prefix"
 	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

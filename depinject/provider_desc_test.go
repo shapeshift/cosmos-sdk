@@ -6,8 +6,8 @@ import (
 
 	"gotest.tools/v3/assert"
 
-	"cosmossdk.io/depinject/internal/codegen"
-	"cosmossdk.io/depinject/internal/graphviz"
+	"github.com/shapeshift/cosmos-sdk/depinject/internal/codegen"
+	"github.com/shapeshift/cosmos-sdk/depinject/internal/graphviz"
 )
 
 type StructIn struct {

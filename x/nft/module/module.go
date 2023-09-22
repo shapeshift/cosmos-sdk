@@ -8,8 +8,8 @@ import (
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 
 	sdkclient "github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/codec"
@@ -20,7 +20,7 @@ import (
 	"github.com/shapeshift/cosmos-sdk/types/module"
 	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
 
-	modulev1 "cosmossdk.io/api/cosmos/nft/module/v1"
+	modulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/nft/module/v1"
 
 	"github.com/shapeshift/cosmos-sdk/x/nft"
 	"github.com/shapeshift/cosmos-sdk/x/nft/client/cli"

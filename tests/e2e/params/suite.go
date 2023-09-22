@@ -8,9 +8,9 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/runtime"
 	servertypes "github.com/shapeshift/cosmos-sdk/server/types"
 	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"

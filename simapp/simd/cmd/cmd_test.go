@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/simapp"
-	"cosmossdk.io/simapp/simd/cmd"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	svrcmd "github.com/shapeshift/cosmos-sdk/server/cmd"
+	"github.com/shapeshift/cosmos-sdk/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp/simd/cmd"
 	"github.com/shapeshift/cosmos-sdk/x/genutil/client/cli"
 )
 

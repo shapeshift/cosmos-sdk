@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"cosmossdk.io/errors"
 	"github.com/armon/go-metrics"
+	"github.com/shapeshift/cosmos-sdk/errors"
 
 	"github.com/shapeshift/cosmos-sdk/telemetry"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

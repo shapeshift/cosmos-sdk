@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
 	govtypes "github.com/shapeshift/cosmos-sdk/x/gov/types"
 

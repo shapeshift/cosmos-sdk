@@ -3,7 +3,7 @@ package keeper
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	types "github.com/shapeshift/cosmos-sdk/x/staking/types"

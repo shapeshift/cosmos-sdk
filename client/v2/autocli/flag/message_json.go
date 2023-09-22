@@ -8,7 +8,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"cosmossdk.io/client/v2/internal/util"
+	"github.com/shapeshift/cosmos-sdk/client/v2/internal/util"
 )
 
 type jsonMessageFlagType struct {

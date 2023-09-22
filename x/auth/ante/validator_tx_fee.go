@@ -3,7 +3,7 @@ package ante
 import (
 	"math"
 
-	sdkmath "cosmossdk.io/math"
+	sdkmath "github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"
 )

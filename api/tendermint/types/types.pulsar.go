@@ -2,8 +2,8 @@
 package types
 
 import (
-	crypto "cosmossdk.io/api/tendermint/crypto"
-	version "cosmossdk.io/api/tendermint/version"
+	crypto "github.com/shapeshift/cosmos-sdk/api/tendermint/crypto"
+	version "github.com/shapeshift/cosmos-sdk/api/tendermint/version"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

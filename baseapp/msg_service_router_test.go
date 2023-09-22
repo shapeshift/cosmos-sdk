@@ -10,10 +10,10 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/client/tx"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/runtime"
 	"github.com/shapeshift/cosmos-sdk/testutil/testdata"
 	"github.com/shapeshift/cosmos-sdk/types/tx/signing"

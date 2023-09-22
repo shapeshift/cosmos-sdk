@@ -2,9 +2,9 @@
 package distributionv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	v1beta11 "cosmossdk.io/api/cosmos/base/query/v1beta1"
-	v1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
+	v1beta11 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/query/v1beta1"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

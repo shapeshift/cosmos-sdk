@@ -43,7 +43,7 @@ interface. This removes and fully deprecates all legacy queriers. All modules no
 known as the LCD, and the `sdk.Msg#Route` method won't be used anymore.
 
 Most other existing `AppModule` methods have been moved to extension interfaces in preparation for the migration
-to the `cosmossdk.io/core/appmodule` API in the next release. Most `AppModule` implementations should not be broken
+to the `github.com/shapeshift/cosmos-sdk/core/appmodule` API in the next release. Most `AppModule` implementations should not be broken
 by this change.
 
 ### SimApp

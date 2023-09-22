@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	cverrors "cosmossdk.io/tools/cosmovisor/errors"
 	"github.com/rs/zerolog"
+	cverrors "github.com/shapeshift/cosmos-sdk/tools/cosmovisor/errors"
 	upgradekeeper "github.com/shapeshift/cosmos-sdk/x/upgrade/keeper"
 	upgradetypes "github.com/shapeshift/cosmos-sdk/x/upgrade/types"
 )

@@ -1,7 +1,7 @@
 package nft
 
 import (
-	"cosmossdk.io/errors"
+	"github.com/shapeshift/cosmos-sdk/errors"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	sdkerrors "github.com/shapeshift/cosmos-sdk/types/errors"

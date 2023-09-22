@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	ormv1 "cosmossdk.io/api/cosmos/orm/v1"
 	"github.com/iancoleman/strcase"
+	ormv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/orm/v1"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 	"google.golang.org/protobuf/compiler/protogen"

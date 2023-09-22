@@ -3,8 +3,8 @@ package query_test
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/store/prefix"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/types/address"

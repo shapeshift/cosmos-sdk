@@ -1,7 +1,7 @@
 package v1beta1
 
 import (
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"sigs.k8s.io/yaml"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"

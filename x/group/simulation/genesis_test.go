@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
-	sdkmath "cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/depinject"
+	sdkmath "github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/types/module"
 	simtypes "github.com/shapeshift/cosmos-sdk/types/simulation"
 	"github.com/shapeshift/cosmos-sdk/x/group"

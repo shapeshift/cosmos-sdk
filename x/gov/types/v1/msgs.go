@@ -3,7 +3,7 @@ package v1
 import (
 	"fmt"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

@@ -2,7 +2,7 @@
 package storev1beta1
 
 import (
-	abci "cosmossdk.io/api/tendermint/abci"
+	abci "github.com/shapeshift/cosmos-sdk/api/tendermint/abci"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

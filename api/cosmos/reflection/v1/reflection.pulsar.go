@@ -2,7 +2,7 @@
 package reflectionv1
 
 import (
-	_ "cosmossdk.io/api/cosmos/query/v1"
+	_ "github.com/shapeshift/cosmos-sdk/api/cosmos/query/v1"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"cosmossdk.io/depinject/internal/graphviz"
+	"github.com/shapeshift/cosmos-sdk/depinject/internal/graphviz"
 )
 
 type container struct {

@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"cosmossdk.io/math"
-	"cosmossdk.io/tx/textual/valuerenderer"
+	"github.com/shapeshift/cosmos-sdk/math"
+	"github.com/shapeshift/cosmos-sdk/tx/textual/valuerenderer"
 )
 
 func TestIntJsonTestcases(t *testing.T) {

@@ -1,4 +1,4 @@
-module cosmossdk.io/errors
+module github.com/shapeshift/cosmos-sdk/errors
 
 go 1.19
 

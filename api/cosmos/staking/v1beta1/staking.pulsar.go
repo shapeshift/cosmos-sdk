@@ -2,10 +2,10 @@
 package stakingv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	v1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
-	abci "cosmossdk.io/api/tendermint/abci"
-	types "cosmossdk.io/api/tendermint/types"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
+	abci "github.com/shapeshift/cosmos-sdk/api/tendermint/abci"
+	types "github.com/shapeshift/cosmos-sdk/api/tendermint/types"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

@@ -7,8 +7,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"

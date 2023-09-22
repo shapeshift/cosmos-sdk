@@ -1,6 +1,6 @@
 # Cosmovisor v1.4.0 Release Notes
 
-* Rename cosmovisor package to `cosmossdk.io/tools/cosmovisor`.
+* Rename cosmovisor package to `github.com/shapeshift/cosmos-sdk/tools/cosmovisor`.
 
 ## Changelog
 

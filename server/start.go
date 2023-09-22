@@ -22,8 +22,6 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"cosmossdk.io/tools/rosetta"
-	crgserver "cosmossdk.io/tools/rosetta/lib/server"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	"github.com/shapeshift/cosmos-sdk/codec"
@@ -33,6 +31,8 @@ import (
 	"github.com/shapeshift/cosmos-sdk/server/types"
 	pruningtypes "github.com/shapeshift/cosmos-sdk/store/pruning/types"
 	"github.com/shapeshift/cosmos-sdk/telemetry"
+	"github.com/shapeshift/cosmos-sdk/tools/rosetta"
+	crgserver "github.com/shapeshift/cosmos-sdk/tools/rosetta/lib/server"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/types/mempool"
 )

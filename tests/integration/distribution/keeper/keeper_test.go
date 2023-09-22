@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/require"
 
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"

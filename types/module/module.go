@@ -33,9 +33,9 @@ import (
 	"fmt"
 	"sort"
 
-	"cosmossdk.io/core/appmodule"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/maps"
 
@@ -273,7 +273,7 @@ func NewManager(modules ...AppModule) *Manager {
 }
 
 // NewManagerFromMap creates a new Manager object from a map of module names to module implementations.
-// This method should be used for apps and modules which have migrated to the cosmossdk.io/core.appmodule.AppModule API.
+// This method should be used for apps and modules which have migrated to the github.com/shapeshift/cosmos-sdk/core.appmodule.AppModule API.
 func NewManagerFromMap(moduleMap map[string]appmodule.AppModule) *Manager {
 	simpleModuleMap := make(map[string]interface{})
 	modulesStr := make([]string, 0, len(simpleModuleMap))

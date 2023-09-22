@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"cosmossdk.io/depinject"
 	proto "github.com/cosmos/gogoproto/proto"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/stretchr/testify/require"
 
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"

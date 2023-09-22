@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
 

@@ -1,4 +1,4 @@
-module cosmossdk.io/math
+module github.com/shapeshift/cosmos-sdk/math
 
 go 1.19
 

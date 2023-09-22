@@ -2,9 +2,9 @@
 package tendermintv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	types "cosmossdk.io/api/tendermint/types"
-	version "cosmossdk.io/api/tendermint/version"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
+	types "github.com/shapeshift/cosmos-sdk/api/tendermint/types"
+	version "github.com/shapeshift/cosmos-sdk/api/tendermint/version"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

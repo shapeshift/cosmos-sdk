@@ -56,7 +56,7 @@ https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_config.go#L
 
 :::tip
 The example above shows how to create an `AppConfig` using Go. However, it is also possible to create an `AppConfig` using YAML, or JSON.  
-The configuration can then be embed with `go:embed` and read with [`appconfig.LoadYAML`](https://pkg.go.dev/cosmossdk.io/core/appconfig#LoadYAML), or [`appconfig.LoadJSON`](https://pkg.go.dev/cosmossdk.io/core/appconfig#LoadJSON), in `app_v2.go`.
+The configuration can then be embed with `go:embed` and read with [`appconfig.LoadYAML`](https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/core/appconfig#LoadYAML), or [`appconfig.LoadJSON`](https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/core/appconfig#LoadJSON), in `app_v2.go`.
 
 ```go
 //go:embed app_config.yaml
@@ -111,7 +111,7 @@ When using `depinject.Inject`, the injected types must be pointers.
 
 In advanced cases, it is possible to inject extra (module) configuration in a way that is not (yet) supported by `AppConfig`.  
 In this case, use `depinject.Configs` for combining the extra configuration and `AppConfig`, and `depinject.Supply` to providing that extra configuration.
-More information on how work `depinject.Configs` and `depinject.Supply` can be found in the [`depinject` documentation](https://pkg.go.dev/cosmossdk.io/depinject).
+More information on how work `depinject.Configs` and `depinject.Supply` can be found in the [`depinject` documentation](https://pkg.go.dev/github.com/shapeshift/cosmos-sdk/depinject).
 
 ```go reference
 https://github.com/shapeshift/cosmos-sdk/blob/v0.47.0-rc1/simapp/app_v2.go#L186-L216

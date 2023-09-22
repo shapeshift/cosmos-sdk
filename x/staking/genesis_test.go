@@ -3,7 +3,7 @@ package staking_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"

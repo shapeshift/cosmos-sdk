@@ -7,11 +7,11 @@ import (
 	"os"
 	"testing"
 
-	"cosmossdk.io/tx/textual/valuerenderer"
+	"github.com/shapeshift/cosmos-sdk/tx/textual/valuerenderer"
 	"github.com/stretchr/testify/require"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	"cosmossdk.io/tx/textual/internal/testpb"
+	bankv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/tx/textual/internal/testpb"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )

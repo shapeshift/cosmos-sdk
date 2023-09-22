@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"cosmossdk.io/tools/cosmovisor"
-	cverrors "cosmossdk.io/tools/cosmovisor/errors"
+	"github.com/shapeshift/cosmos-sdk/tools/cosmovisor"
+	cverrors "github.com/shapeshift/cosmos-sdk/tools/cosmovisor/errors"
 )
 
 func main() {

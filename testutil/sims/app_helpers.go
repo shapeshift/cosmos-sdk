@@ -12,8 +12,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtypes "github.com/cometbft/cometbft/types"
 
-	"cosmossdk.io/depinject"
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/depinject"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	"github.com/shapeshift/cosmos-sdk/codec"

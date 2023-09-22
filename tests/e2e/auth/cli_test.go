@@ -6,7 +6,7 @@ package auth
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 
 	"github.com/shapeshift/cosmos-sdk/testutil/network"
 

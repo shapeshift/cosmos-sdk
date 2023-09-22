@@ -2,10 +2,10 @@
 package tendermintv1beta1
 
 import (
-	_ "cosmossdk.io/api/amino"
-	v1beta1 "cosmossdk.io/api/cosmos/base/query/v1beta1"
-	p2p "cosmossdk.io/api/tendermint/p2p"
-	types "cosmossdk.io/api/tendermint/types"
+	_ "github.com/shapeshift/cosmos-sdk/api/amino"
+	v1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/query/v1beta1"
+	p2p "github.com/shapeshift/cosmos-sdk/api/tendermint/p2p"
+	types "github.com/shapeshift/cosmos-sdk/api/tendermint/types"
 	fmt "fmt"
 	_ "github.com/cosmos/cosmos-proto"
 	runtime "github.com/cosmos/cosmos-proto/runtime"

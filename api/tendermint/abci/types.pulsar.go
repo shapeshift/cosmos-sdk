@@ -2,8 +2,8 @@
 package abci
 
 import (
-	crypto "cosmossdk.io/api/tendermint/crypto"
-	types "cosmossdk.io/api/tendermint/types"
+	crypto "github.com/shapeshift/cosmos-sdk/api/tendermint/crypto"
+	types "github.com/shapeshift/cosmos-sdk/api/tendermint/types"
 	fmt "fmt"
 	runtime "github.com/cosmos/cosmos-proto/runtime"
 	_ "github.com/cosmos/gogoproto/gogoproto"

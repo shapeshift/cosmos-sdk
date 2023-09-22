@@ -7,7 +7,7 @@ package testutil
 import (
 	reflect "reflect"
 
-	math "cosmossdk.io/math"
+	math "github.com/shapeshift/cosmos-sdk/math"
 	types "github.com/shapeshift/cosmos-sdk/types"
 	types0 "github.com/shapeshift/cosmos-sdk/x/auth/types"
 	types1 "github.com/shapeshift/cosmos-sdk/x/staking/types"

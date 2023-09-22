@@ -8,14 +8,14 @@ import (
 	"os"
 	"path/filepath"
 
-	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
-	reflectionv1 "cosmossdk.io/api/cosmos/reflection/v1"
 	dbm "github.com/cometbft/cometbft-db"
 	abci "github.com/cometbft/cometbft/abci/types"
 	"github.com/cometbft/cometbft/libs/log"
+	autocliv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/autocli/v1"
+	reflectionv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/reflection/v1"
 	"github.com/spf13/cast"
 
-	simappparams "cosmossdk.io/simapp/params"
+	simappparams "github.com/shapeshift/cosmos-sdk/simapp/params"
 
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client"

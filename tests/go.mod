@@ -3,10 +3,10 @@ module github.com/shapeshift/cosmos-sdk/tests
 go 1.19
 
 require (
-	cosmossdk.io/api v0.3.1
-	cosmossdk.io/depinject v1.0.0-alpha.4
-	cosmossdk.io/math v1.1.2
-	cosmossdk.io/simapp v0.0.0-00010101000000-000000000000
+	github.com/shapeshift/cosmos-sdk/api v0.3.1
+	github.com/shapeshift/cosmos-sdk/depinject v1.0.0-alpha.4
+	github.com/shapeshift/cosmos-sdk/math v1.1.2
+	github.com/shapeshift/cosmos-sdk/simapp v0.0.0-00010101000000-000000000000
 	github.com/cometbft/cometbft v0.37.2
 	github.com/cometbft/cometbft-db v0.7.0
 	github.com/shapeshift/cosmos-sdk v0.47.2
@@ -26,10 +26,10 @@ require (
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/iam v1.1.0 // indirect
 	cloud.google.com/go/storage v1.30.1 // indirect
-	cosmossdk.io/core v0.5.1 // indirect
-	cosmossdk.io/errors v1.0.0 // indirect
-	cosmossdk.io/log v1.2.1 // indirect
-	cosmossdk.io/tools/rosetta v0.2.1 // indirect
+	github.com/shapeshift/cosmos-sdk/core v0.5.1 // indirect
+	github.com/shapeshift/cosmos-sdk/errors v1.0.0 // indirect
+	github.com/shapeshift/cosmos-sdk/log v1.2.1 // indirect
+	github.com/shapeshift/cosmos-sdk/tools/rosetta v0.2.1 // indirect
 	filippo.io/edwards25519 v1.0.0 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
 	github.com/99designs/keyring v1.2.1 // indirect
@@ -176,7 +176,7 @@ require (
 
 replace (
 	// We always want to test against the latest version of the simapp.
-	cosmossdk.io/simapp => ../simapp
+	github.com/shapeshift/cosmos-sdk/simapp => ../simapp
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// We always want to test against the latest version of the SDK.
 	github.com/shapeshift/cosmos-sdk => ../.

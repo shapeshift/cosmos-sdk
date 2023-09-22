@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	v1 "github.com/shapeshift/cosmos-sdk/x/gov/types/v1"
 	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"

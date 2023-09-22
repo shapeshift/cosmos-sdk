@@ -12,7 +12,6 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/depinject"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	"github.com/shapeshift/cosmos-sdk/codec/legacy"
 	"github.com/shapeshift/cosmos-sdk/crypto"
@@ -21,6 +20,7 @@ import (
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/bcrypt"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/secp256k1"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	_ "github.com/shapeshift/cosmos-sdk/runtime"
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	"github.com/shapeshift/cosmos-sdk/types"

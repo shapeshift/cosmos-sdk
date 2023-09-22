@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	math "cosmossdk.io/math"
+	math "github.com/shapeshift/cosmos-sdk/math"
 	types "github.com/shapeshift/cosmos-sdk/types"
 	query "github.com/shapeshift/cosmos-sdk/types/query"
 	types0 "github.com/shapeshift/cosmos-sdk/x/auth/types"

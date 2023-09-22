@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/shapeshift/cosmos-sdk/client/grpc/tmservice"

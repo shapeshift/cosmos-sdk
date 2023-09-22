@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/shapeshift/cosmos-sdk/types"

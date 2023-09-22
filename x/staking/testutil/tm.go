@@ -1,9 +1,9 @@
 package testutil
 
 import (
-	"cosmossdk.io/math"
 	tmcrypto "github.com/cometbft/cometbft/crypto"
 	tmtypes "github.com/cometbft/cometbft/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	cryptocodec "github.com/shapeshift/cosmos-sdk/crypto/codec"
 	"github.com/shapeshift/cosmos-sdk/x/staking/types"

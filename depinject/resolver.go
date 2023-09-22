@@ -3,7 +3,7 @@ package depinject
 import (
 	"reflect"
 
-	"cosmossdk.io/depinject/internal/graphviz"
+	"github.com/shapeshift/cosmos-sdk/depinject/internal/graphviz"
 )
 
 type resolver interface {

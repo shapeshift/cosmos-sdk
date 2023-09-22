@@ -6,9 +6,9 @@ import (
 	"sort"
 	"testing"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/runtime"
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"

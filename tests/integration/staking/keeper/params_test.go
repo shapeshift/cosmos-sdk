@@ -3,8 +3,8 @@ package keeper
 import (
 	"testing"
 
-	"cosmossdk.io/simapp"
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/shapeshift/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 )

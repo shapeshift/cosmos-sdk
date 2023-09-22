@@ -10,8 +10,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	authkeeper "github.com/shapeshift/cosmos-sdk/x/auth/keeper"
 	bankkeeper "github.com/shapeshift/cosmos-sdk/x/bank/keeper"

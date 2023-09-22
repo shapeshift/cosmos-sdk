@@ -3,7 +3,7 @@ package v2_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/require"
 
 	"github.com/shapeshift/cosmos-sdk/store/prefix"

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	sdkmath "cosmossdk.io/math"
+	sdkmath "github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/suite"
 )
 

@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
-	basev1beta1 "cosmossdk.io/api/cosmos/base/v1beta1"
-	"cosmossdk.io/math"
+	bankv1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/v1beta1"
+	basev1beta1 "github.com/shapeshift/cosmos-sdk/api/cosmos/base/v1beta1"
+	"github.com/shapeshift/cosmos-sdk/math"
 )
 
 // formatCoin formats a sdk.Coin into a value-rendered string, using the

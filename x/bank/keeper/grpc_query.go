@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
-	"cosmossdk.io/math"
 	gogotypes "github.com/cosmos/gogoproto/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 

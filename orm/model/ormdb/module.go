@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	ormv1alpha1 "cosmossdk.io/api/cosmos/orm/v1alpha1"
+	ormv1alpha1 "github.com/shapeshift/cosmos-sdk/api/cosmos/orm/v1alpha1"
 
 	"github.com/shapeshift/cosmos-sdk/orm/types/ormjson"
 

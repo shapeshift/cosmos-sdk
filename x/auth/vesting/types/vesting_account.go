@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"sigs.k8s.io/yaml"
 
 	cryptotypes "github.com/shapeshift/cosmos-sdk/crypto/types"

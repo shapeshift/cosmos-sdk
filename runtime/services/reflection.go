@@ -6,8 +6,8 @@ import (
 	"context"
 	"io"
 
-	reflectionv1 "cosmossdk.io/api/cosmos/reflection/v1"
 	"github.com/cosmos/gogoproto/proto"
+	reflectionv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/reflection/v1"
 	"golang.org/x/exp/slices"
 	protov2 "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protodesc"

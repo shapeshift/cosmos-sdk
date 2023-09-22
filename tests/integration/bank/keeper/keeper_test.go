@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	authmodulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
-	"cosmossdk.io/math"
+	authmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/auth/module/v1"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	storetypes "github.com/shapeshift/cosmos-sdk/store/types"
 	"github.com/shapeshift/cosmos-sdk/testutil/configurator"
 	"github.com/shapeshift/cosmos-sdk/testutil/sims"
@@ -26,8 +26,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/types/query"
 	authkeeper "github.com/shapeshift/cosmos-sdk/x/auth/keeper"

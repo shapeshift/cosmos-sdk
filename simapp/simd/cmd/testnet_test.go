@@ -9,10 +9,10 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	"github.com/shapeshift/cosmos-sdk/server"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"
 	"github.com/shapeshift/cosmos-sdk/x/auth"
 	banktypes "github.com/shapeshift/cosmos-sdk/x/bank/types"

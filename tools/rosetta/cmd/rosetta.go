@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"cosmossdk.io/tools/rosetta"
 	"github.com/shapeshift/cosmos-sdk/codec"
 	codectypes "github.com/shapeshift/cosmos-sdk/codec/types"
+	"github.com/shapeshift/cosmos-sdk/tools/rosetta"
 )
 
 // RosettaCommand builds the rosetta root command given

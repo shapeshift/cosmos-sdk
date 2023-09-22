@@ -3,7 +3,7 @@ package gov_test
 import (
 	"testing"
 
-	"cosmossdk.io/math"
+	"github.com/shapeshift/cosmos-sdk/math"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	authtypes "github.com/shapeshift/cosmos-sdk/x/auth/types"
 	"github.com/shapeshift/cosmos-sdk/x/gov/types"

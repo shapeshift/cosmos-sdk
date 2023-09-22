@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"cosmossdk.io/simapp"
-	"cosmossdk.io/simapp/simd/cmd"
 	"github.com/shapeshift/cosmos-sdk/server"
 	svrcmd "github.com/shapeshift/cosmos-sdk/server/cmd"
+	"github.com/shapeshift/cosmos-sdk/simapp"
+	"github.com/shapeshift/cosmos-sdk/simapp/simd/cmd"
 )
 
 func main() {

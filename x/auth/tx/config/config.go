@@ -3,12 +3,12 @@ package tx
 import (
 	"fmt"
 
-	txconfigv1 "cosmossdk.io/api/cosmos/tx/config/v1"
-	"cosmossdk.io/core/appmodule"
-	"cosmossdk.io/depinject"
+	txconfigv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/tx/config/v1"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/core/appmodule"
+	"github.com/shapeshift/cosmos-sdk/depinject"
 	"github.com/shapeshift/cosmos-sdk/runtime"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	"github.com/shapeshift/cosmos-sdk/x/auth/ante"

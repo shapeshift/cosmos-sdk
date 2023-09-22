@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"cosmossdk.io/math"
 	fuzz "github.com/google/gofuzz"
+	"github.com/shapeshift/cosmos-sdk/math"
 
 	"github.com/shapeshift/cosmos-sdk/store/prefix"
 	sdk "github.com/shapeshift/cosmos-sdk/types"

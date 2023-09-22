@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	"cosmossdk.io/core/appconfig"
+	"github.com/shapeshift/cosmos-sdk/core/appconfig"
 	_ "github.com/shapeshift/cosmos-sdk/x/auth"
 	_ "github.com/shapeshift/cosmos-sdk/x/auth/tx/config"
 	_ "github.com/shapeshift/cosmos-sdk/x/bank"
@@ -19,16 +19,16 @@ import (
 	paramstypes "github.com/shapeshift/cosmos-sdk/x/params/types"
 	stakingtypes "github.com/shapeshift/cosmos-sdk/x/staking/types"
 
-	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
-	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
-	authmodulev1 "cosmossdk.io/api/cosmos/auth/module/v1"
-	bankmodulev1 "cosmossdk.io/api/cosmos/bank/module/v1"
-	consensusmodulev1 "cosmossdk.io/api/cosmos/consensus/module/v1"
-	genutilmodulev1 "cosmossdk.io/api/cosmos/genutil/module/v1"
-	mintmodulev1 "cosmossdk.io/api/cosmos/mint/module/v1"
-	paramsmodulev1 "cosmossdk.io/api/cosmos/params/module/v1"
-	stakingmodulev1 "cosmossdk.io/api/cosmos/staking/module/v1"
-	txconfigv1 "cosmossdk.io/api/cosmos/tx/config/v1"
+	runtimev1alpha1 "github.com/shapeshift/cosmos-sdk/api/cosmos/app/runtime/v1alpha1"
+	appv1alpha1 "github.com/shapeshift/cosmos-sdk/api/cosmos/app/v1alpha1"
+	authmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/auth/module/v1"
+	bankmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/bank/module/v1"
+	consensusmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/consensus/module/v1"
+	genutilmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/genutil/module/v1"
+	mintmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/mint/module/v1"
+	paramsmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/params/module/v1"
+	stakingmodulev1 "github.com/shapeshift/cosmos-sdk/api/cosmos/staking/module/v1"
+	txconfigv1 "github.com/shapeshift/cosmos-sdk/api/cosmos/tx/config/v1"
 )
 
 var AppConfig = appconfig.Compose(&appv1alpha1.Config{

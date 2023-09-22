@@ -3,8 +3,8 @@ package distribution
 import (
 	"fmt"
 
-	"cosmossdk.io/simapp"
 	"github.com/cosmos/gogoproto/proto"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	"github.com/stretchr/testify/suite"
 
 	sdktestutil "github.com/shapeshift/cosmos-sdk/testutil"

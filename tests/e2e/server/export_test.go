@@ -22,11 +22,11 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtypes "github.com/cometbft/cometbft/types"
 
-	"cosmossdk.io/simapp"
 	"github.com/shapeshift/cosmos-sdk/client"
 	"github.com/shapeshift/cosmos-sdk/client/flags"
 	"github.com/shapeshift/cosmos-sdk/server"
 	"github.com/shapeshift/cosmos-sdk/server/types"
+	"github.com/shapeshift/cosmos-sdk/simapp"
 	simtestutil "github.com/shapeshift/cosmos-sdk/testutil/sims"
 	"github.com/shapeshift/cosmos-sdk/types/errors"
 	"github.com/shapeshift/cosmos-sdk/x/genutil"

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	"cosmossdk.io/math"
 	"github.com/shapeshift/cosmos-sdk/baseapp"
 	"github.com/shapeshift/cosmos-sdk/codec"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/shapeshift/cosmos-sdk/testutil"
 	sdk "github.com/shapeshift/cosmos-sdk/types"
 	moduletestutil "github.com/shapeshift/cosmos-sdk/types/module/testutil"

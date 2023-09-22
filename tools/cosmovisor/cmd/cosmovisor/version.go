@@ -6,8 +6,8 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"cosmossdk.io/tools/cosmovisor"
 	"github.com/rs/zerolog"
+	"github.com/shapeshift/cosmos-sdk/tools/cosmovisor"
 	"github.com/spf13/cobra"
 )
 

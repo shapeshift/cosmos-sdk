@@ -5,8 +5,8 @@ import (
 	"sort"
 	"testing"
 
-	"cosmossdk.io/math"
 	tmtypes "github.com/cometbft/cometbft/types"
+	"github.com/shapeshift/cosmos-sdk/math"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
