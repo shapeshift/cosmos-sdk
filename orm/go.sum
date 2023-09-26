@@ -1,7 +1,3 @@
-github.com/shapeshift/cosmos-sdk/api v0.3.1 h1:NNiOclKRR0AOlO4KIqeaG6PS6kswOMhHD0ir0SscNXE=
-github.com/shapeshift/cosmos-sdk/api v0.3.1/go.mod h1:DfHfMkiNA2Uhy8fj0JJlOCYOBp4eWUUJ1te5zBGNyIw=
-github.com/shapeshift/cosmos-sdk/errors v1.0.0 h1:nxF07lmlBbB8NKQhtJ+sJm6ef5uV1XkvPXG2bUntb04=
-github.com/shapeshift/cosmos-sdk/errors v1.0.0/go.mod h1:+hJZLuhdDE0pYN8HkOrVNwrIOYvUGnn6+4fjnJs/oV0=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
@@ -130,6 +126,10 @@ github.com/regen-network/gocuke v0.6.2 h1:pHviZ0kKAq2U2hN2q3smKNxct6hS0mGByFMHGn
 github.com/regen-network/gocuke v0.6.2/go.mod h1:zYaqIHZobHyd0xOrHGPQjbhGJsuZ1oElx150u2o1xuk=
 github.com/rogpeppe/go-internal v1.8.1 h1:geMPLpDpQOgVyCg5z5GoRwLHepNdb71NXb67XFkP+Eg=
 github.com/russross/blackfriday v1.5.2/go.mod h1:JO/DiYxRf+HjHt06OyowR9PTA263kcR/rfWxYHBV53g=
+github.com/shapeshift/cosmos-sdk/api v0.3.1 h1:43C2kU9rltegUdlYxhPAEg6N40axl/rN1x6HAqbqrIQ=
+github.com/shapeshift/cosmos-sdk/api v0.3.1/go.mod h1:/W+3rn5lXsageEp16jhCHOZrEZlHVnj9+PbAayTQODg=
+github.com/shapeshift/cosmos-sdk/errors v1.0.0 h1:wahafhiYtNEW/pMrLTScQTTbqN0wPKiFknJC+QC0bvI=
+github.com/shapeshift/cosmos-sdk/errors v1.0.0/go.mod h1:Ni4LNN6EGlbJ2gRlif73DUQPKgN95Z71OV4BNHfQ7XM=
 github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72/go.mod h1:JwIasOWyU6f++ZhiEuf87xNszmSA2myDM2Kzu9HwQUA=
 github.com/spaolacci/murmur3 v1.1.0 h1:7c1g84S4BPRrfL5Xrdp6fOJ206sU9y293DDHaoy0bLI=
 github.com/spaolacci/murmur3 v1.1.0/go.mod h1:JwIasOWyU6f++ZhiEuf87xNszmSA2myDM2Kzu9HwQUA=
