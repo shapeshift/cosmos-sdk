@@ -38,6 +38,10 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
+### Security
+
+* (deps) Update klauspost/compress to 1.18.7 for [GHSA-259r-337f-4rfw](https://github.com/advisories/GHSA-259r-337f-4rfw). Requires Go 1.24 or newer; select Go 1.26.10 for development.
+
 ### Features
 
 * (baseapp) [#16581](https://github.com/cosmos/cosmos-sdk/pull/16581) Implement Optimistic Execution as an experimental feature (not enabled by default).

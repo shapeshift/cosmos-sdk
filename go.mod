@@ -1,6 +1,6 @@
-go 1.21
+go 1.24.0
 
-toolchain go1.21.0
+toolchain go1.26.10
 
 module github.com/cosmos/cosmos-sdk
 
@@ -117,7 +117,7 @@ require (
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jmhodges/levigo v1.0.0 // indirect
-	github.com/klauspost/compress v1.16.7 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/lib/pq v1.10.7 // indirect
